@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+        <!-- ---------- BOOTSTRAP ---------- -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- ---------- IONICONS ---------- -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- ---------- CSS + ICONE ---------- -->
+		<link rel="stylesheet" href="./CSS/style.css" />
+        <link rel="shortcut icon" href="./assets/Pictures/Site_Logo_Black.ico" >
+		<title>Ennemis: les Cabals</title>
+	</head>
+
+	<body>
+        <div class="pageHeader">
+            <img src="Pictures/Cabal.jpg" alt="Intro - Cabals">
+            <div class="headerContent">
+                <h1>LES CABALS</h1>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 mb-4">
+            <a class="navbar-brand" href="#">
+				<img src="Pictures/Cabal_Logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-center">
+			</a>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Intro">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#CabalWarriors">Guerriers Cabals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#CabalLegions">Légions Cabales</a>
+                </li>
+                <li class="nav-item px-3 py-1 col-12 col-lg-auto">
+                    <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#NewCabalWarriors">Nouveaux guerriers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#NewCabalLegions">Nouvelles Légions</a>
+                </li>
+            </ul>
+            <a class="navbar-home-button" href="./index" role="button">
+                <ion-icon name="home" class="navbar-icon"></ion-icon>
+            </a>
+            <div class="search-box">
+				<label for="search-box">
+					<input type="text" name="search-box" id="search-box" placeholder="Rechercher..." autocomplete="chrome-off">
+				</label>
+				<div class="result-box">
+				</div>
+			</div>
+			<script src="./JavaScript/searchBar.js"></script>
+        </nav>
+
+        <section id="Intro">
+            <div class="medium-separator"></div>
+            <div class="medium-container">
+                <div class="split-content">
+                    <h2>INTRODUCTION - CABALS</h2>
+                </div>
+                <p>
+                    Les Cabals sont une espèce originaire d'une planète nommée <strong>Torobatl</strong>. Extrêmements coriaces, ils sont prêts à défendre
+                    leur territoire jusqu'à ce que le dernier d'entre eux soit mort.
+                    Leur architecture est très industrielle, avec un accent sur l'enfouissement dans les montagnes, pour se défendre.
+                    <br/><br/>
+                    C'est une espèce très militariste et belligérante dont la structure sociale et leurs modes de vie tournent en grande partie autour
+                    de la conquête et de l'expansion.
+                    <br/>
+                    Leur empire interstellaire en pleine expansion s'étend grâce à l'organisation, l'efficacité et la corruption. L'armée Cabale qui a
+                    occupé Mars et l'a maintenue pendant un certain temps n'était qu'une fraction de sa puissance totale.
+                    <br/><br/>
+                    Selon une légende cabale, trois guerriers cabals ont cherché à revendiquer le Soleil, gardé par une bête féroce. Les deux premiers
+                    guerriers sont morts en essayant d'éviter la bête, mais le troisième est mort avec honneur et bravoure après l'avoir défié au combat.
+                    <br/>
+                    Ce sacrifice a inspiré d'autres guerriers Cabals à revendiquer le Soleil, et donc de tuer la bête. A force des assauts répétés des
+                    Cabals, la bête mourut, et c'était un guerrier du nom d'<strong>Acrius</strong> qui lui porta le coup fatal.
+                    <br/><br/>
+                    <strong>Acrius</strong> est devenu le premier Cabal à réussir à revendiquer le Soleil, et a ainsi unifié leur race sous son règne en
+                    tant que premier <strong>Empereur</strong>.
+                </p>
+            </div>
+        </section>
+
+        <div class="content-separator"></div>
+
+        <section id="CabalWarriors">
+            <div class="large-container">
+                <div class="split-content">
+                    <h2>LES GUERRIERS CABALS</h2>
+                </div>
+                <p>
+                    Les Cabals sont organisés par unités d'élite sur le terrain, et de nom de nombreuses unités Cabales font référence aux
+                    forces militaires de l'Empire Romain. Ces unités sont présentées ci-dessous: 
+                </p>
+                
+                <div class="cards-holder">
+                    <div class="card-hover mx-auto">
+                        <img src="Enemies/Legionary.webp" class="card-img-top" alt="Legionnaire">
+                        <div class="card-body">
+                            <h5>Les Légionnaires</h5>
+                            <p>
+                                Equipés de puissants fusils, ils sont l'infanterie de ligne des Cabals et le pilier de leur
+                                puissance militaire au sol.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Enemies/Phalanx.webp" class="card-img-top" alt="Phalange">
+                        <div class="card-body">
+                            <h5>Les Phalanges</h5>
+                            <p>
+                                Les Phalanges transportent des boucliers massifs et indestructibles, qu'ils utilisent aussi bien pour
+                                l'attaque que la défense.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Enemies/Centurion.webp" class="card-img-top" alt="Centurion">
+                        <div class="card-body">
+                            <h5>Les Centurions</h5>
+                            <p>
+                                Commandants de terrain, les Centurions sont hautement qualifiés en plus d'être dotés d'un excellent sens
+                                stratégique.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Enemies/Psion.webp" class="card-img-top" alt="Psion">
+                        <div class="card-body">
+                            <h5>Les Psions</h5>
+                            <p>
+                                Les Psions sont rapides, intelligents et imprédictibles. Ils possèdent également de puissantes
+                                capacités psychiques.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Enemies/Colossus.webp" class="card-img-top" alt="Colosse">
+                        <div class="card-body">
+                            <h5>Les Colosses</h5>
+                            <p>
+                                Equipé d'armes lourdes et d'armures impénétrables, il est l'unité d'infanterie la plus dévastatrice des rangs
+                                Cabals.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Enemies/Goliath.webp" class="card-img-top" alt="Goliath">
+                        <div class="card-body">
+                            <h5>Les Goliaths</h5>
+                            <p>
+                                Un char super lourd. Son canon principal ainsi que ses systèmes d'armes sont assez puissants
+                                pour raser des bunkers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="quote">
+                    "Stratégiquement efficaces, disciplinés et inépuisables, les Cabals constituent la plus grande force militaire connue
+                    à travers le système. 
+                    Leur origine et leurs objectifs ultimes constituent un mystère encore aujourd'hui, mais il semble que le nombre des mondes
+                    qu'ils ont conquis dépasse de loin ceux dont nous connaissons l'existence."
+                </p>
+            </div>
+        </section>
+
+        <div class="content-separator"></div>
+
+        <section id="CabalLegions">
+            <div class="medium-container">
+                <div class="split-content">
+                    <h2>LES DIFFÉRENTES LÉGIONS CABALES</h2>
+                </div>
+                <p>
+                    Les Cabals sont organisés en différentes Légions dispersées dans le système, notamment sur Mars, ou ils mobilisent une grande
+                    partie de leurs troupes. Ayant tous pour principal objectif de défendre Mars de l'assaut des Vex, ils sont présentés ci-dessous:
+                </p>
+            </div>
+
+            <div class="medium-separator"></div>
+
+            <div class="enemy-factions-holder">
+                <div class="enemy-text">
+                    <h4>LES SABLOPHAGES</h4>
+                    <p>
+                        Les Sablophages sont la Légion la plus importante et la plus fréquemment rencontrée sur Mars, combattant en
+                        première ligne contre les <strong>Vex</strong>.
+                        Leurs tactiques et leur morale sont moins bons que ceux des autres Légions, mais ils font preuve d'une détermination
+                        féroce. 
+                        Il s'agit plutôt d'une légion standard sur Mars comparée aux trois autres légions stationnées ici, mais cela
+                        est éclipsé par leur énorme avantage numérique.
+                        <br/><br/>
+                        Les <strong>Géants des Sables</strong>, une autre légion Cabale, sont connus pour être une sous-division des Sablophages.
+                        Ces derniers sont appelés en renfort quand les Sablophages sont en danger.
+                        <br/><br/>
+                        Recrutée parmi les vétérans de l'infanterie des Sablophages, les <strong>Géants des Sables</strong> servent de force mobile
+                        de choc et de réserve pour les éclaireurs Cabals, renforçant les lignes lors des offensives Vex majeures.
+                    </p>
+                </div>
+                <div class="enemy-image">
+                    <img src="Factions/SandEaters.webp" alt="Sablophages">
+                </div>
+            </div>
+
+            <div class="enemy-factions-holder">
+                <div class="enemy-text">
+                    <h4>LES SAPEURS D'ASSAUT</h4>
+                    <p>
+                        Agissant comme l'unité d'élite des Cabals, les Sapeurs d'Assaut sont déployés dans des zones non sécurisées pour en prendre
+                        le contrôle et mettre en place des fortifications pour englober davantage de territoire Cabal.
+                        <br/><br/>
+                        Les commandants de cette légion jouissent d'une plus grande liberté opérationnelle que les autres unités en raison de leur doctrine
+                        tactique consistant à faire face à des dangers inconnus, ce qui justifie leurs tactiques agressives et leur équipement spécialisé.
+                        <br/><br/>
+                        Depuis que leur ancien Primus ait été tué par les forces de l'<strong>Empereur Calus</strong>, le <strong>Valus Ta'aurc</strong> des
+                        Géants des Sables a pris le contrôle de la Légion à sa place.
+                        <br/>
+                        Sous sa direction, les Cabals ont conquis de nouvelles terres sur Mars, dont la ville coloniale d'<strong>Eleuthéria</strong>.
+                    </p>
+                </div>
+                <div class="enemy-image">
+                    <img src="Factions/SiegeDancers.webp" alt="Sapeurs d'Assaut">
+                </div>
+            </div>
+
+            <div class="enemy-factions-holder">
+                <div class="enemy-text">
+                    <h4>LA LÉGION AVEUGLE</h4>
+                    <p>
+                        La Légion Aveugle est un détachement d'élite des Cabals situés sur Mars. Ces Cabals sont appelés à défendre les artéfacts
+                        vitaux qui ont été saisis aux Vex, ou à s'emparer d'autres reliques.
+                        Comme les Cabals sont en guerre contre les Vex, leur activité est cruciale pour l'effort de guerre. 
+                        <br/><br/>
+                        Ils sont l'équivalent des troupes de choc, déployés pour des objectifs spécifiques au lieu du combat standard.
+                        <br/>
+                        Pendant leur recherche d'artéfacts, la Légion Aveugle est tombée sur une structure Vex qui pourrait bien être la clé d'accès
+                        au <strong>Jardin Noir</strong>, que les Vex protègent férocement.
+                        <br/><br/>
+                        Pour éviter que cette structure ne revienne aux mains des Vex, les Cabals ont construit une base tout autour, que l'on nomme
+                        aujourd'hui le <strong>Fort de la Légion</strong>, et qui est entièrement sous le contrôle de la Légion Aveugle.
+                    </p>
+                </div>
+                <div class="enemy-image">
+                    <img src="Factions/BlindLegion.webp" alt="Légion Aveugle">
+                </div>
+            </div>
+
+            <div class="enemy-factions-holder">
+                <div class="enemy-text">
+                    <h4>LES EMBRASEURS CÉLESTERS</h4>
+                    <p>
+                        Les Embraseurs Célestes constituent la flotte de démolition des Cabals sur Mars. Ils sont principalement basés sur
+                        <strong>Phobos</strong>.
+                        <br/>
+                        Lorsqu' <strong>Oryx</strong> a commencé à ravager le système, les Embraseurs Célestes ont été les premiers à rencontrer les
+                        <strong>Corrompus</strong>, après avoir remarqué une activité étrange.
+                        Peu de temps après, beaucoup d'Embraseurs Célestes ont été corrompus par Oryx, ce qui a poussé le <strong>Primus Ta'aun</strong>
+                        à ordonner une évacuation de masse.
+                        <br/><br/>
+                        Ta'aun a ensuite rédigé un rapport sur l'inefficacité des forces Cabales contre les Gardiens, et a suggéré que la technologie à
+                        bord du <strong>Cuirassé</strong> d'Oryx pourrait être utilisée par les Cabals pour contrer la lumière des Gardiens.
+                        <br/>
+                        L'Empereur a donc ordonné à Ta'aun de monter à bord du Cuirassé et de tuer Oryx par tous les moyens possibles.
+                    </p>
+                </div>
+                <div class="enemy-image">
+                    <img src="Factions/SkyBurners.webp" alt="Embraseurs Célestes">
+                </div>
+            </div>
+        </section>
+
+        <div class="content-separator"></div>
+
+        <section id="NewCabalWarriors">
+            <div class="large-container">
+                <div class="split-content">
+                    <h2>LES NOUVEAUX GUERRIERS CABALS</h2>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    <h4 class="alert-heading">Avant de continuer...</h4>
+                    Le reste de cette page est exclusivement dédié à Destiny 2. Si vous souhaitez uniquement rester sur le contenu de Destiny,
+                    il n'est pas conseillé de continuer.
+                </div>
+                <p>
+                    Avec l'arrivée de <strong>Destiny 2</strong>, de nouveaux ennemis Cabals ont été aperçus dans le système solaire, notamment
+                    sur <strong>Terre</strong>, et ont établi des bases militaires non loin de la <strong>Dernière Cité</strong>.
+                    <br/>
+                    Ces nouveaux guerriers sont listés ci-dessous:
+                </p>
+
+                <div class="cards-holder">
+                    <div class="card-hover mx-auto">
+                        <img src="Enemies/Gladiator.webp" class="card-img-top" alt="Gladiateur">
+                        <div class="card-body">
+                            <h5>Les Gladiateurs</h5>
+                            <p>
+                                D'une stature massive et possédant  un agilité et une endurance incroyables, ils chargent sans peur et sans relâche.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Enemies/WarBeast.webp" class="card-img-top" alt="Bête de Guerre">
+                        <div class="card-body">
+                            <h5>Les Bêtes de Guerre</h5>
+                            <p>
+                                Ce sont des animaux d'attaque féroces et vicieux déployés pour servir de chair à canon pour protéger ses autres forces.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Enemies/Incendiary.webp" class="card-img-top" alt="Incendiaire">
+                        <div class="card-body">
+                            <h5>Les Incendiaires</h5>
+                            <p>
+                                Ils sont la force pyrotechnique de première ligne, déployés pour incinérer l'infanterie et les infrastructures.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-separator"></div>
+
+        <section id="NewCabalLegions">
+            <div class="warning-accordion">
+				<div class="warning-accordion-item">
+					<div class="warning-accordion-header">
+                        <div class="split-content">
+							<h2>LES NOUVELLES LÉGIONS CABALES</h2>
+						</div>
+
+						<div class="alert alert-danger" role="alert">
+							<h4 class="alert-heading">Attention!</h4>
+							La section ci-dessous contient des spoilers et des éléments d'histoire liés à Destiny 2. Êtes-vous sûr de vouloir continuer ?
+						</div>
+                    </div>
+					<div class="warning-accordion-content">
+                        <div class="enemy-factions-holder">
+                            <div class="enemy-text">
+                                <h4>LA LÉGION ROUGE</h4>
+                                <p>
+                                    La Légion Rouge est une légion d'élite Cabale dirigée par <strong>Dominus Ghaul</strong>. La Légion Rouge
+                                    prit le contrôle de l'Empire Cabal, autrefois sous la direction de l'Empereur <strong>Calus</strong>, et
+                                    Ghaul se déclara leader d'un nouveau régime Cabal.
+                                    <br/>
+                                    Ghaul étant devenu dirigeant de son nouveau régime, il se mit à étudier le Voyageur, et les mondes qu'il a touchés.
+                                    <br/><br/>
+                                    Un jour, Ghaul reçut un message de la part des <strong>Embraseurs Célestes</strong>, signalant qu'ils auraient
+                                    trouvé une technologie pour contrer la Lumière des Gardiens à bord du <strong>Cuirassé</strong> d'Oryx.
+                                    <br/><br/>
+                                    Grâce aux Embraseurs Célestes, et aux études de Ghaul sur le Voyageur, la Légion Rouge a pu construire une cage capable 
+                                    d'extraire la Lumière du Voyageur.
+                                    La cage étant constuite, ils se dirigèrent vers la Terre en vue d'attaquer la <strong>Dernière Cité</strong>
+                                    et de priver les Gardiens de leur Lumière.
+                                </p>
+                            </div>
+                            <div class="enemy-image">
+                                <img src="Factions/RedLegion.webp" alt="Légion Rouge">
+                            </div>
+                        </div>
+
+                        <div class="enemy-factions-holder">
+                            <div class="enemy-text">
+                                <h4>LES LOYALISTES</h4>
+                                <p>
+                                    Les Loyalistes sont les fidèles de l'<strong>Empereur Calus</strong> et les gardes qui le servent.
+                                    <br/>
+                                    Les Loyalistes ont été formés après la mise en place du <strong>Coup de Minuit</strong> par Ghaul.
+                                    Sachant que l'acte de tuer Calus serait un trop grand outrage pour être réprimandé, Ghaul et la
+                                    Légion Rouge ont préféré exiler Calus à bord de son propre vaisseau, un vaisseau prison titanesque, le
+                                    <strong>Léviathan</strong>, ainsi que tous ses partisans.
+                                    <br/><br/>
+                                    Pendant son exil, l'Empereur Calus a rencontré de nombreuses races, anciennes et nouvelles, et les a toutes
+                                    rassemblées dans le giron de son Léviathan. Il créa les <strong>Ombres</strong> comme ses champions d'élite.
+                                    <br/>
+                                    Lorsque la Légion Rouge arriva dans le système solaire, Calus déploya ses Ombres pour assassiner les différents
+                                    conspirateurs à l'origine du coup d'état.
+                                </p>
+                            </div>
+                            <div class="enemy-image">
+                                <img src="Factions/Loyalists.webp" alt="Légion Rouge">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="large-separator"></div>
+        <script src="./JavaScript/customComponents.js"></script>
+    </body>
+</html>
