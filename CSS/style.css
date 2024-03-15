@@ -1,0 +1,159 @@
+
+/* ----- FICHIERS CSS ----- */
+
+
+@import 'cards.css';
+@import 'bootstrap.css';
+@import 'search_bar.css';
+@import 'buttons.css';
+@import 'tooltips.css';
+@import 'modals.css';
+@import 'layout.css';
+@import 'custom_elements.css';
+@import 'custom_factions.css';
+@import 'accordions.css';
+@import 'nav_bar.css';
+
+
+/* ----- POLICES PERSONNALISÉES ----- */
+
+
+@font-face { font-family: "PT Sans Narrow"; src: url(../Fonts/PTSansNarrow-Regular.ttf);}
+@font-face { font-family: "PT Sans Narrow Bold"; src: url(../Fonts/PTSansNarrow-Bold.ttf);}
+@font-face { font-family: "BebasNeue"; src: url(../Fonts/BebasNeue-Regular.ttf);}
+@font-face { font-family: "PassionOne"; src: url(../Fonts/PassionOne-Regular.ttf);}
+
+
+/* ----- PALETTE DE COULEURS ----- */
+
+
+:root {
+	--background-color: #FFE89C;
+	--layout-color: #F5F5F5;
+	--empty-color: #413639;
+
+	--color-primary: #98817B;
+	--color-secondary: #1ca9c9;
+	--color-tertiary: #B99976;
+
+	--links-color: #38818D;
+	--hover-color: #92DCE5;
+
+	--success-color: #66B600;
+	--warning-color: #FFC67D;
+	--danger-color: #FA0069;
+}
+
+body, html {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: fit-content;
+	align-items: center;
+	max-width: 100%;
+}	 
+
+section
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: fit-content;
+	align-items: center;
+	background: var(--background-color);
+	max-width: 100%;
+}
+
+iframe
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+p
+{
+	width: 95%;
+	font-family: "PT Sans Narrow";
+	font-size: larger;
+}
+
+strong
+{
+	font-family: "PT Sans Narrow Bold";
+	font-size: 18.5px;
+	color: var(--color-tertiary);
+}
+
+h5
+{
+	font-family: "PT Sans Narrow Bold";
+	font-size: 25px;
+}
+
+h2
+{
+	font-family: "PT Sans Narrow";
+	text-align: center;
+	color: var(--color-primary);
+}
+
+h1
+{
+	font-family: "PT Sans Narrow Bold";
+	text-align: left;
+	color: var(--color-primary);
+}
+
+div
+{
+	text-align: center;
+	max-width: 100%;
+}
+
+img
+{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+body
+{
+	background-color: var(--background-color);
+}
+
+a
+{
+	text-decoration: none;
+	color: var(--color-secondary);
+}
+
+table
+{
+	margin: auto;
+	border-collapse: collapse;
+	border: 1px solid #DDDDDD;
+	border-spacing: 30px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	max-width: 100%;
+}
+
+td, tr
+{
+	text-align: center;
+	border-collapse: collapse;
+	background-color: var(--layout-color);
+	font-size: large;
+	padding: 20px;
+}
+
+table tr td img
+{
+	border-radius: 3px;
+	max-width: 100%;
+}
+
+table tr .Faction_S
+{
+	color: #b7aa9d;
+}

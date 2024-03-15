@@ -1,0 +1,103 @@
+
+/* ----- MODAL PERSONNALISE ----- */
+
+
+.button-modal
+{
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	padding-top: 0.375rem;
+	padding-bottom: 0.375rem;
+	background-color: var(--danger-color);
+	color: var(--layout-color);
+	font-style: italic;
+	border: none;
+	border-radius: 5px;
+}
+
+.modal-container
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	opacity: 0;
+	pointer-events: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 0.5s ease;
+	z-index: 145;
+}
+
+.modal-container.show
+{
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.modal-container .simple-modal
+{
+	background-color: var(--layout-color);
+	width: 800px;
+	padding: 30px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	justify-content: center;
+	align-items: center;
+	z-index: 150;
+}
+
+.modal-container .simple-modal h2
+{
+	color: var(--color-secondary);
+	font-family: "BebasNeue";
+}
+
+.modal-container .simple-modal a
+{
+	margin: 5px;
+}
+
+.modal-container .simple-modal .golden-age
+{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.modal-container .simple-modal .collapse-age
+{
+	padding-left: 27.5px;
+	padding-right: 27.5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.modal-container .simple-modal .dark-age
+{
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.modal-container .simple-modal .city-age
+{
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.modal-container .simple-modal img
+{
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	margin-left: 722px;
+}

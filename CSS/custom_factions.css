@@ -1,0 +1,321 @@
+
+/* ----- TABLEAU DES FACTIONS ALLIÉES DE LA TOUR ----- */
+
+.faction-holder
+{
+	width: 1770px;
+	height: 160px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin-right: 25px;
+	margin-left: 25px;
+	z-index: 110;
+}
+
+.button-factions
+{
+	width: 275px;
+	height: 135px;
+	margin: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+	background:  var(--layout-color);
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.35s;
+}
+
+.button-factions:hover
+{
+	transform: translateY(-15px);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.button-factions img
+{
+	filter: invert(75%);
+	transition: 0.35s;
+	z-index: 8;
+}
+
+.button-factions:hover img
+{
+	filter: invert(0%);
+	transition: 0.35s;
+}
+
+.vanguard:hover
+{
+	background: #151D37;
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+.crucible:hover
+{
+	background: #BA4E45;
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+.gunsmith:hover
+{
+	background: #143057;
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+.gunsmith .gunsmith-bar
+{
+	z-index: 4;
+	display: none;
+	position: absolute;
+	width: 255px;
+	height: 40px;
+	background: #C5B539;
+	transition: 0.35s;
+	transform: skewY(-20deg);
+}
+
+.gunsmith:hover .gunsmith-bar
+{
+	z-index: 4;
+	display: flex;
+	position: absolute;
+	width: 255px;
+	height: 45px;
+	background: #e4d03b;
+	transition: 0.35s;
+}
+
+.monarchy:hover
+{
+	background: #ED2A2B;
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+.orbit:hover
+{
+	background: black;
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+.cult:hover
+{
+	background: #302A56;
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+
+
+.vanguard.active
+{
+	background: #151D37;
+	transform: translateY(-15px);
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+.vanguard.active img
+{
+	filter: invert(0%);
+}
+
+.crucible.active
+{
+    background: #BA4E45;
+    transform: translateY(-15px);
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+.crucible.active img
+{
+    filter: invert(0%);
+}
+
+.gunsmith.active
+{
+    background: #143057;
+    transform: translateY(-15px);
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+.gunsmith.active .gunsmith-bar
+{
+	display: flex;
+	background: #e4d03b;
+	height: 45px;
+}
+
+.gunsmith.active img
+{
+    filter: invert(0%);
+}
+
+.monarchy.active
+{
+    background: #ED2A2B;
+    transform: translateY(-15px);
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+.monarchy.active img
+{
+    filter: invert(0%);
+}
+
+.orbit.active
+{
+    background: black;
+    transform: translateY(-15px);
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+.orbit.active img
+{
+    filter: invert(0%);
+}
+
+.cult.active
+{
+    background: #302A56;
+    transform: translateY(-15px);
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
+}
+
+.cult.active img
+{
+    filter: invert(0%);
+}
+
+
+
+.faction-story-holder
+{
+	position: relative;
+	width: 1770px;
+	height: 502px;
+	margin: 25px;
+	overflow: hidden;
+	border-top: 1px solid #dee2e6;
+	border-bottom: 1px solid #dee2e6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 110;
+}
+
+.story-van, .story-cru, .story-gun, .story-mon, .story-orb, .story-cul
+{
+	position: absolute;
+	bottom: -602px;
+	width: 1500px;
+	height: 425px;
+	transition: ease-out 0.5s;
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+
+.story-van.active, .story-cru.active, .story-gun.active,
+.story-mon.active, .story-orb.active, .story-cul.active
+{
+	bottom: 37.5px;
+	transition: ease-out 0.5s;
+}
+
+.story-van h4, .story-cru h4, .story-gun h4, .story-mon h4, .story-orb h4, .story-cul h4
+{
+	font-family: "BebasNeue";
+	color: #b7aa9d;
+	font-size: 27px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.story-van .quote, .story-cru .quote, .story-gun .quote, .story-mon .quote, .story-orb .quote, .story-cul .quote
+{
+	width: 70%;
+}
+
+.story-van p, .story-cru p, .story-gun p, .story-mon p, .story-orb p, .story-cul p
+{
+	width: 85%;
+	font-size: large;
+}
+
+.story-van a, .story-cru a, .story-gun a, .story-mon a, .story-orb a, .story-cul a
+{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "BebasNeue";
+	font-size: 20px;
+}
+
+
+/* ----- FACTIONS ENNEMIES ----- */
+
+
+.enemy-factions-holder
+{
+	display: flex;
+	width: 75%;
+	height: 400px;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	background: var(--layout-color);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin: 15px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.warning-accordion-content .enemy-factions-holder
+{
+	width: 90%;
+}
+
+.enemy-image
+{
+	display: flex;
+	align-items: center;
+	width: 35%;
+	height: 100%;
+	max-width: 100%;
+}
+
+.enemy-image img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.enemy-text
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	width: 65%;
+	z-index: 2;
+}
+
+
+
+.enemy-text p
+{
+	width: 95%;
+	max-width: 100%;
+	font-family: "PT Sans Narrow";
+	font-size: larger;
+	color: #353330;
+}
+
+.enemy-text h4
+{
+	font-size: 45px;
+	font-family: "PassionOne";
+	color: var(--color-secondary);
+}

@@ -1,0 +1,33 @@
+
+.alert-warning,
+.alert-danger
+{
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: 'PT Sans Narrow';
+    font-size: larger;
+}
+
+.alert-warning h4,
+.alert-danger h4
+{
+    font-family: 'PT Sans Narrow Bold';
+    font-size: 30px;
+}
+
+.alert-warning
+{
+    margin-bottom: 25px;
+}
+
+.alert-danger
+{
+    transition: 0.4s;
+}
+
+.alert-danger:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.4s;
+}

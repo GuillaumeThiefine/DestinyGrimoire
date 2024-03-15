@@ -1,0 +1,231 @@
+/* ----- CARTES CSS ----- */
+
+
+.cards-holder
+{
+	position: relative;
+	width: 90%;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+.large-container .cards-holder
+{
+	width: 98%;
+}
+
+
+/* ----- PETITES CARTES CSS ----- */
+
+
+.cards-holder .card-hover
+{
+	position: relative;
+	width: 18%;
+	height: 30%;
+	margin: 20px;
+	overflow: hidden;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.cards-holder .card-hover .card-body
+{
+	position: absolute;
+	bottom: -110px;
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	flex-direction: column;
+	background: var(--layout-color);
+	box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	transition: bottom 0.5s;
+	max-width: 100%;
+}
+
+.cards-holder .card-hover-empty
+{
+	position: relative;
+	width: 18%;
+	height: 30%;
+	margin: 20px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--layout-color);
+}
+
+.cards-holder .card-hover:hover .card-body
+{
+	bottom: 0px;
+	max-width: 100%;
+}
+
+.cards-holder .card-hover .card-body h5
+{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 10px;
+	font-family: "BebasNeue";
+	color: var(--color-secondary);
+}
+
+.cards-holder .card-hover .card-body p
+{
+	width: 90%;
+	height: fit-content;
+	font-size: 18px;
+    padding-bottom: 10px;
+	max-width: 100%;
+
+}
+
+
+/* ----- CARTES MOYENNES CSS ----- */
+
+
+.cards-holder .card-wide-hover
+{
+	position: relative;
+	width: 24%;
+	height: 24%;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	overflow: hidden;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.cards-holder .card-wide-hover .card-wide-body
+{
+	position: absolute;
+	bottom: -170px;
+	width: 100%;
+	height: fit-content;
+	padding-bottom: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	flex-direction: column;
+	background: var(--layout-color);
+	box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	transition: bottom 0.5s;
+	max-width: 100%;
+}
+
+.cards-holder .card-wide-hover:hover .card-wide-body
+{
+	bottom: -25px;
+    padding-bottom: 10px;
+	max-width: 100%;
+}
+
+.cards-holder .card-wide-hover .card-wide-body h5
+{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 10px;
+	margin: 0;
+	font-family: "BebasNeue";
+	max-width: 100%;
+	color: var(--color-secondary);
+}
+
+.cards-holder .card-wide-hover .card-wide-body p
+{
+	width: 90%;
+	height: fit-content;
+	font-size: 18px;
+    padding-bottom: 10px;
+	max-width: 100%;
+}
+
+
+/* ----- GRANDES CARTES CSS ----- */
+
+
+.cards-holder .card-large-hover
+{
+	position: relative;
+	width: 895px;
+	height: 447px;
+	margin: 20px;
+	overflow: hidden;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+}
+
+.cards-holder .card-large-hover .card-large-body
+{
+	position: absolute;
+	bottom: -150px;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	flex-direction: column;
+	background: var(--layout-color);
+	box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	transition: bottom 0.5s;
+	max-width: 100%;
+}
+
+.cards-holder .card-large-hover:hover .card-large-body
+{
+	bottom: 0px;
+    padding-bottom: 10px;
+	max-width: 100%;
+}
+
+.cards-holder .card-large-hover .card-large-body h5
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 10px;
+	font-family: "BebasNeue";
+	color: var(--color-secondary);
+	max-width: 100%;
+}
+
+.cards-holder .card-large-hover .card-large-body p
+{
+	width: 95%;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding-bottom: 10px;
+	max-width: 100%;
+}

@@ -1,0 +1,50 @@
+
+/* ----- BARRE DE NAVIGATION - BOOTSTRAP ----- */
+
+
+.navbar-expand-lg
+{
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+}
+
+.navbar-expand-lg ul li
+{
+    font-family: "PT Sans Narrow";
+    font-size: larger;
+}
+
+.navbar-home-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid var(--color-secondary);
+    margin-right: 15px;
+    transition: ease-in-out 0.5s;
+}
+
+.navbar-home-button:hover
+{
+    background: var(--color-secondary);
+    transition: ease-in-out 0.5s;
+}
+
+ion-icon
+{
+    width: 60%;
+    height: 60%;
+    color: var(--color-secondary);
+    transition: ease-in-out 0.5s;
+}
+
+.navbar-home-button:hover ion-icon
+{
+    color: var(--layout-color);
+    transition: ease-in-out 0.5s;
+}

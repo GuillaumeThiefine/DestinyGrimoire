@@ -1,0 +1,181 @@
+
+/* ----- IMAGES RAID ----- */
+
+
+.img-holder .img-box
+{
+	position: relative;
+	width: 845px;
+	height: 519px;
+	overflow: hidden;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-holder .img-box .txt-box
+{
+	position: absolute;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+	transition: cubic-bezier(0, 0.74, 0.61, 1) 0.8s;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	padding-bottom: 10%;
+}
+
+.img-holder .img-box:hover .txt-box
+{
+	left: 0px;
+	padding-bottom: 10%;
+}
+
+.img-holder .img-box .txt-box h1
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--layout-color);
+	padding-top: 15%;
+}
+
+.img-holder .img-box .txt-box p
+{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--layout-color);
+}
+
+.img-holder .img-box .txt-box a
+{
+	--bs-btn-bg: var(--bs-white);
+	--bs-btn-color: var(--bs-black);
+
+	--bs-btn-hover-color: var(--bs-black);
+	--bs-btn-hover-bg: rgb(238, 235, 235);
+
+	--bs-btn-active-color: var(--bs-black);
+	--bs-btn-active-bg: var(--bs-white);
+
+	--bs-btn-border-color: var(--bs-white);
+	--bs-btn-hover-border-color: var(--bs-white);
+
+	font-family: "PT Sans Narrow";
+	font-size: 18px;
+}
+
+
+/* ----- IMAGES DE CAMPAGNE ----- */
+
+
+.campaignPicture img
+{
+	display: flex;
+	width: 985px;
+	height: 300px;
+	border-radius: 10px;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, .3);
+}
+
+
+/* ----- SUPPORT IMAGES PERSONNALISE ----- */
+
+
+.image-holder
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1820px;
+	height: 350px;
+}
+
+.image-holder .image-content
+{
+	z-index: 4;
+	position: relative;
+	width: 600px;
+	height: 325px;
+	padding: 10px;
+}
+
+.image-holder .image-content img
+{
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, .3);
+	transition: 0.35s;
+}
+
+.image-holder .image-text-content 
+{
+	position: absolute;
+	top: 0;
+	padding: 20px 20px;
+	transition: 0.35s;
+}
+
+.image-holder .image-text-content h2
+{
+	color: rgba(245, 245, 245, .8);
+	font-family: "BebasNeue";
+	font-size: 30px;
+}
+
+
+/* ----- SUPPORT PLANETES PERSONNALISE ----- */
+
+
+.planets-holder
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1820px;
+	height: 375px;
+}
+
+.planets-holder .planet-content
+{
+	z-index: 4;
+	position: relative;
+	width: 700px;
+	height: 375px;
+	padding: 10px;
+}
+
+.planets-holder .planet-content img
+{
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.planets-holder .planet-text-content 
+{
+	position: absolute;
+	top: 0;
+	padding: 20px 20px;
+}
+
+.planets-holder .planet-text-content h2
+{
+	color: rgba(245, 245, 245, .8);
+	font-family: "BebasNeue";
+	font-size: 35px;
+}
