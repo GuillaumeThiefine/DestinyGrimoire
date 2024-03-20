@@ -62,12 +62,12 @@ function generateLinks(item) {
         'Dernière Cité': 'LastCity/LastCity',
 
         /* Récupère les liens pour les pages Web des factions ennemies */
-        'Vex': 'Enemies/Vex/Vex.html',
-        'Symbiotes des Diables': 'Enemies/DevilSplicer/DevilSplicer',
-        'Déchus': 'Enemies/Fallen/Fallen',
-        'Corrompus': 'Enemies/Taken/Taken',
-        'Cabals': 'Enemies/Cabal/Cabal',
-        'Ruche': 'Enemies/Hive/Hive',
+        'Vex': 'Enemies/Vex/index',
+        'Symbiotes des Diables': 'Enemies/DevilSplicer/index',
+        'Déchus': 'Enemies/Fallen/index',
+        'Corrompus': 'Enemies/Taken/index',
+        'Cabals': 'Enemies/Cabal/index',
+        'Ruche': 'Enemies/Hive/index',
 
         /* Récupère les liens pour les pages Web des extensions */
         'Les Ténèbres Souterraines': 'Content/DarkBelow',
