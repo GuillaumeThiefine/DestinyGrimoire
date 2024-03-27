@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+        <!-- ---------- BOOTSTRAP ---------- -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- ---------- IONICONS ---------- -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- ---------- CSS + ICONE ---------- -->
+		<link rel="stylesheet" href="../../CSS/style.css" />
+        <link rel="shortcut icon" href="../../assets/Pictures/SiteLogoBlack.ico" >
+		<title>Ennemis: les Vex | Destiny Grimoire</title>
+	</head>
+
+	<body>
+        <div class="pageHeader">
+            <img src="Pictures/Vex.jpg" alt="Intro - Vex">
+            <div class="headerContent">
+                <h1>LES VEX</h1>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 mb-4">
+            <a class="navbar-brand" href="#">
+				<img src="Pictures/Vex_Logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-center">
+			</a>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Intro">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#VexUnits">Unités Vex</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#VexCollectives">Collectifs Vex</a>
+                </li>
+                <li class="nav-item px-3 py-1 col-12 col-lg-auto">
+                    <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#NewVexUnits">Nouvelles unités Vex</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#NewVexCollectives">Nouveaux Collectifs Vex</a>
+            </ul>
+            <a class="navbar-home-button" href="../../" role="button">
+                <ion-icon name="home" class="navbar-icon"></ion-icon>
+            </a>
+            <div class="search-box">
+				<label for="search-box">
+					<input type="text" name="search-box" id="search-box" placeholder="Rechercher..." autocomplete="chrome-off">
+				</label>
+				<div class="result-box">
+				</div>
+			</div>
+			<script src="../../JavaScript/searchBar.js"></script>
+        </nav>
+
+        <section id="Intro">
+            <div class="medium-separator"></div>
+            <div class="medium-container">
+                <div class="split-content">
+                    <h2>INTRODUCTION - LES VEX</h2>
+                </div>
+                <p>
+                    Les Vex sont une espèce cybernétique aussi ancienne que l'Univers lui-même. Ces derniers sont capables de prouesses d'ingégnierie,
+                    comme la reconstruction de planètes entières telles que <strong>Nessos</strong> et <strong>Mercure</strong> dans leurs mondes-machines,
+                    le voyage spatial par portail, le traitement des données et la manipulation de la ligne du temps à une échelle impossible pour
+                    l'humanité.
+                    <br/>
+                    Mais ils sont dépourvus de langage, de pensée et de sensibilité au sens humain. Ils ne peuvent être conciliés ou raisonnés, et sont
+                    hostiles à toute forme de vie autre que la leur.
+                    <br/><br/>
+                    Les Vex sont présents dans le système solaire depuis des milliards d'années, avant l'humanité. On trouve leurs structures sophistiquées
+                    et bien gardées sur de nombreuses planètes, dont <strong>Vénus</strong>, <strong>Mars</strong> et <strong>Io</strong>. 
+                    Certains sites Vex, comme le <strong>Jardin Noir</strong> ou le <strong>Caveau de Verre</strong>, sont des royaumes artificiels
+                    existant en dehors de l'espace et du temps.
+                    <br/><br/>
+                    Le plus ancien évènement historique associé aux Vex remonte au jour ou <strong>Cropta, fils d'Oryx</strong> a ouvert un portail vers
+                    un lieu ou les Vex étaient présents, dans l'espoir de trouver un pouvoir secret pour lui-même. Au lieu de cela, il a permis aux Vex
+                    d'envahir le monde du trône d'<strong>Oryx, Roi des Corrompus</strong>.
+                    <br/><br/>
+                    D'abord inadaptés au Royaume Ascendant et aux règles qui régissent sa réalité, les Vex ont rapidement appris la logique de la Ruche,
+                    créant <strong>Quria, Clairvoyant de l'épée</strong> pour l'étudier. Grâce à Quria, les Vex ont appris à atteindre le statut de divinité
+                    en tuant tous ceux qui s'opposaient à eux et en adoptant le culte comme fonction première. Oryx, s'étant rendu compte que son monde du
+                    trône a été envahi par les Vex, commença à les corrompre un par un. Il rencontra ainsi Quria, et voyait en elle un adversaire à sa
+                    taille. Il finit par offrir Quria en cadeau à sa soeur, <strong>Savathûn</strong>.
+                </p>
+            </div>
+        </section>
+
+        <div class="content-separator"></div>
+
+        <section id="VexUnits">
+            <div class="large-container">
+                <div class="split-content">
+                    <h2>LES UNITÉS VEX</h2>
+                </div>
+                <p>
+                    Les Vex sont tous connectés les uns aux autres dans un esprit de ruche massif, mais des unités Vex appelées les
+                    <strong>Esprits</strong> agissent comme des leaders de groupe. Ces unités Vex sont présentées ci-dessous:
+                </p>
+
+                <div class="cards-holder">
+                    <div class="card-hover mx-auto">
+                        <img src="Warriors/Goblin.webp" class="card-img-top" alt="Gobelin">
+                        <div class="card-body">
+                            <h5>Les Gobelins</h5>
+                            <p>
+                                Ils attaquent en grand nombre et servent souvent de diversion frontale pour une ou plusieurs unités
+                                Vex plus puissantes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Warriors/Hobgoblin.webp" class="card-img-top" alt="Hobgobelin">
+                        <div class="card-body">
+                            <h5>Les Hobgobelins</h5>
+                            <p>
+                                Spécialisé dans le tir de précision, le Hobgobelin dispose de mires améliorés et de capteurs logés
+                                dans ses cornes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Warriors/Harpy.webp" class="card-img-top" alt="Harpie">
+                        <div class="card-body">
+                            <h5>Les Harpies</h5>
+                            <p>
+                                La plus rapide des Vex, elle est une unité aérienne qui se déplace en groupe et effectue des
+                                missions de repérage.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Warriors/Minotaur.webp" class="card-img-top" alt="Minotaure">
+                        <div class="card-body">
+                            <h5>Les Minotaures</h5>
+                            <p>
+                                Ce sont les plus meurtiers en raison de leurs téléportations imprévisibles et de
+                                leurs mouvements agressifs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Warriors/Hydra.webp" class="card-img-top" alt="Hydre">
+                        <div class="card-body">
+                            <h5>Les Hydres</h5>
+                            <p>
+                                C'est un processeur ultrarapide, qui se nourrit de toutes les informations que lui
+                                transmettent les Vex.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-hover mx-auto">
+                        <img src="Warriors/Cyclops.webp" class="card-img-top" alt="Cyclope">
+                        <div class="card-body">
+                            <h5>Les Cyclopes</h5>
+                            <p>
+                                Ils agissent comme des unités d'artillerie, installés pour protéger des points clés avec des tirs de
+                                mortier dévastateurs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="quote">
+                    "Si nous sommes des représentations, nous existons à l'intérieur de cette portion d'univers que le spécimen Vex a pu créer avec
+                    la seule force de son esprit. Si nous sommes réels, nous devons sortir de cette simulation."
+                </p>
+            </div>
+        </section>
+
+        <div class="content-separator"></div>
+
+        <section id="VexCollectives">
+            <div class="medium-container">
+                <div class="split-content">
+                    <h2>LES DIFFÉRENTS COLLECTIFS VEX</h2>
+                </div>
+                <p>
+                    Les Vex sont divisés en différents collectifs de programmation, chacun ayant un ensemble différent de directives destinées 
+                    à faire progresser les Vex dans leur ensemble. Peu importe leur but, ils sont unis par un objectif unique et insondable.
+                    Ces groupes sont représentés ci-dessous:
+                </p>
+            </div>
+
+            <div class="medium-separator"></div>
+
+            <div class="enemy-factions-holder">
+                <div class="enemy-text">
+                    <h4>LES TORTIONNAIRES DE HEZE</h4>
+                    <p>
+                        Nous savons que les Vex forment un réseau vaste et unifié de pensées. Mais les Vex ne sont pas tous pareils. Les
+                        Tortionnaires de Heze se distinguent des autres collectifs Vex  par son comportement et ses objectifs distincts.
+                        <br/><br/>
+                        Le principal objectif des Tortionnaires de Heze sur Vénus est de pourchasser et attaquer les Déchus de la <strong>Maison de
+                        l'Hiver</strong>, après avoir tenté de s'infiltrer dans leur repaire. Ils font aussi preuve d'un intérêt particulier pour
+                        les ruines de l'Age d'Or, laissées par le <strong>Collectif d'Ishtar</strong>.
+                        <br/><br/>
+                        Pour des raisons inconnues, les Tortionnaires de Heze se sont également intéressés à l'étude de la technologie de l'Age d'Or et
+                        ont participé à l'occupation de certaines zones afin de les rendre plus adaptées aux opérations Vex.
+                        <br/>
+                        D'autres affirment plutôt qu'il s'agit d'un stratagème pour détourner l'attention des activités des
+                        <strong>Geôliers de Heze</strong>.
+                    </p>
+                </div>
+                <div class="enemy-image">
+                    <img src="Collectives/HezenCorrective.webp" alt="Tortionnaires de Heze">
+                </div>
+            </div>
+
+            <div class="enemy-factions-holder">
+                <div class="enemy-text">
+                    <h4>LES GEÔLIERS DE HEZE</h4>
+                    <p>
+                        Les Geôliers de Heze constituent la seconde plus nombreuse unité comportementale sur Vénus. Ils sont responsables de beaucoup
+                        des projets Vex les plus importants sur Vénus. Principalement regroupés autour
+                        du <strong>Caveau de Verre</strong>, ainsi que de la <strong>Citadelle</strong>, les Geôliers de Heze semblent
+                        adopter un comportement de nature purement défensive.
+                        <br/><br/>
+                        Mais les Cryptarques, ainsi que certains Gardiens maintiennent que ce serait commettre une grave erreur de considérer les Geôliers 
+                        de Heze comme une formation militaire conventionnelle. Le comportement des Vex est un processus constant, actif et réfléchi. 
+                        <br/><br/>
+                        Ils semblent travailler activement à l'achèvement d'un projet colossal de nature inconnue, mais comme pour tout ce qui touche aux 
+                        agissements des Vex, on ignore si l'on pourra un jour comprendre ce qu'ils cherchent à accomplir.
+                        Peut-être cherchent-ils à atteindre un but qui, à nos yeux, est déjà un fait historique.
+                    </p>
+                </div>
+                <div class="enemy-image">
+                    <img src="Collectives/HezenProtective.webp" alt="Geôliers de Heze">
+                </div>
+            </div>
+
+            <div class="enemy-factions-holder">
+                <div class="enemy-text">
+                    <h4>LES SOL RECLUS</h4>
+                    <p>
+                        Au-delà de l'imposant portail Vex situé sur Mars se trouve le <strong>Jardin Noir</strong>, perdu dans le temps et l'espace.
+                        C'est dans le Jardin que résident les Sol Reclus, des Vex figés dans un état d'adulation constante.
+                        <br/><br/>
+                        Leurs origines ne sont pas claires, mais il semble qu'ils aient divergé du collectif Vex, qui ne
+                        s'aligne ni sur la <strong>Lumière</strong>, ni sur les <strong>Ténèbres</strong>. Les Sol Reclus se sont établis dans le
+                        Jardin Noir et ont commencé à vénérer le <strong>Coeur Noir</strong>, une entité des Ténèbres.
+                        <br/><br/>
+                        Mais pourquoi une entité superintelligente, et ayant accès à toutes les connaissances, adopte-t-elle un comportement religieux ?
+                        La réponse à cette question est aussi évidente que terrifiante: si aux yeux des Vex, l'adoration et la dévotion semblent plus
+                        profitables que n'importe quel autre comportement, alors ils l'adopteront.
+                        <br/>
+                        Quoi qu'ils aient pu trouver dans le Jardin Noir, il est incontestable que cette chose est plus puissante qu'eux.
+                    </p>
+                </div>
+                <div class="enemy-image">
+                    <img src="Collectives/SolDivisive.webp" alt="Sol Reclus">
+                </div>
+            </div>
+
+            <div class="enemy-factions-holder">
+                <div class="enemy-text">
+                    <h4>LES CENSEURS DE SPICA</h4>
+                    <p>
+                        Mars est depuis longtemps en proie à un conflit entre les Cabals et les Censeurs de Spica.
+                        Agressifs et sans merci, ces Vex cherchent constamment à pénétrer la <strong>Zone d'Exclusion</strong> Cabale,
+                        indifférents aux pertes nombreuses qu'ils subissent.
+                        <br/>
+                        Malgré l'assaut des Vex, les Cabals sont parvenus à renforcer leur tête de pont et à conserver la mainmise sur certaines
+                        structures Vex. A court terme, la stratégie des Censeurs de Spica est vouée à l'échec.
+                        <br/><br/>
+                        Il est néanmoins peu probable qu'une organisation telle que les Vex, dont l'existence même est inhérente à la pureté des principes 
+                        mathématiques et informatiques qui l'animent, se soit laissée entrainer malgré elle dans une guerre d'usure.
+                        <br/><br/>
+                        Se peut-il que les Vex cherchent à épuiser les forces Cabales ? Ou que leurs pertes apparentes ne soient en fait qu'une
+                        distraction visant à camoufler la nature de leur véritable statagème ?
+                    </p>
+                </div>
+                <div class="enemy-image">
+                    <img src="Collectives/VirgoProhibition.webp" alt="Censeurs de Spica">
+                </div>
+            </div>
+        </section>
+
+        <div class="content-separator"></div>
+
+        <section id="NewVexUnits">
+            <div class="large-container">
+                <div class="split-content">
+                    <h2>LES NOUVELLES UNITÉS VEX</h2>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    <h4 class="alert-heading">Avant de continuer...</h4>
+                    Le reste de cette page est exclusivement dédié à Destiny 2. Si vous souhaitez uniquement rester sur le contenu de Destiny,
+                    il n'est pas conseillé de continuer.
+                </div>
+                <p>
+                    Les rapports des éclaireurs de l'<strong>Avant-Garde</strong> n'ont signalé aucune nouvelle unité Vex dans le système, pas même
+                    sur leurs mondes-machines tels que <strong>Mercure</strong> ou <strong>Nessos</strong>.
+                </p>
+            </div>
+        </section>
+
+        <div class="content-separator"></div>
+
+        <section id="NewVexCollectives">
+            <div class="warning-accordion">
+				<div class="warning-accordion-item">
+					<div class="warning-accordion-header">
+                        <div class="split-content">
+							<h2>LES NOUVEAUX COLLECTIFS VEX</h2>
+						</div>
+
+						<div class="alert alert-danger" role="alert">
+							<h4 class="alert-heading">Attention!</h4>
+							La section ci-dessous contient des spoilers et des éléments d'histoire liés à Destiny 2. Êtes-vous sûr de vouloir continuer ?
+						</div>
+                    </div>
+					<div class="warning-accordion-content">
+                        <div class="enemy-factions-holder">
+                            <div class="enemy-text">
+                                <h4>LES SOL COLLECTIFS</h4>
+                                <p>
+                                    Les preuves indiquent que les Sol Collectifs font partie du plus grand collectif Vex présent dans le système, en raison
+                                    du nombre d'<strong>Esprits</strong> qui le dirigent. Ils sont peut-être des descendants directs des
+                                    <strong>Précurseurs</strong>, un collectif Vex qui a converti <strong>Mercure</strong> en monde-machine, en raison de
+                                    leur forte présence sur la planète.
+                                    <br/><br/>
+                                    Ils sont également responsables de la conversion de <strong>Nessos</strong> en monde-machine, et tentent de faire de
+                                    même pour <strong>Io</strong>.
+                                    <br/>
+                                    Étrangement, on ignore s'ils sont présents sur <strong>Vénus</strong> ou <strong>Mars</strong>, qui sont toutes les
+                                    deux des centres d'activités Vex.
+                                    <br/><br/>
+                                    Hormis la conversion de planètes en mondes-machines, ce collectif s'occupe de toutes les opérations Vex dans le système.
+                                    Comme ce collectif contient certains Esprits les plus puissants et les plus importants du collectif, et qu'il a une
+                                    occupation sur de nombreuses planètes, on peut présumer que les Sol Collectifs sont le collectif de programmation
+                                    dominant dans le système.
+                                </p>
+                            </div>
+                            <div class="enemy-image">
+                                <img src="Collectives/SolCollective.webp" alt="Sol Collectifs">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="large-separator"></div>
+        <script src="../../JavaScript/customComponents.js"></script>
+    </body>
+</html>

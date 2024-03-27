@@ -28,17 +28,13 @@
 
 
 :root {
-	--background-color: #FFE89C;
+	--background-color: #D7EDE0;
 	--layout-color: #F5F5F5;
-	--empty-color: #413639;
 
-	--color-primary: #98817B;
-	--color-secondary: #1ca9c9;
-	--color-tertiary: #B99976;
-
-	--links-color: #38818D;
-	--hover-color: #92DCE5;
-
+	--color-primary: #2CA87B;
+	--color-secondary: #00B4D8;
+	--color-tertiary: #50C878;
+	
 	--success-color: #66B600;
 	--warning-color: #FFC67D;
 	--danger-color: #FA0069;
