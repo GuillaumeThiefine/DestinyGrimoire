@@ -24,3 +24,18 @@
 	box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
 	transform: scale(1.05);
 }
+
+.button-white
+{
+	font-family: "PT Sans Narrow";
+	font-size: large;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
+	color: black;
+	background: var(--white-color);
+	border-radius: 5px;
+	text-decoration: none;
+	transition: 0.5s;
+}

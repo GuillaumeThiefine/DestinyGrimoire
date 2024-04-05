@@ -1,0 +1,206 @@
+
+/* ----- INTRODUCTION DE CAMPAGNE ----- */
+
+
+.extention-intro
+{
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	height: fit-content;
+}
+
+.extention-intro .picture-placeholder
+{
+	width: 30%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.picture-placeholder .intro-picture
+{
+	position: relative;
+	width: 100%;
+	height: 220px;
+	max-height: 100%;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.intro-picture img
+{
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+}
+
+.picture-placeholder .intro-title
+{
+	position: absolute;
+	font-family: 'PassionOne';
+	color: rgba(245, 245, 245, .7);
+	font-size: 30px;
+	margin-left: 5px;
+}
+
+.intro-text
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 77.5%;
+	height: fit-content;
+	background: var(--white-color);
+	border-radius: 5px;
+    border: 1px solid lightgray;
+	margin-top: 15px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.intro-text p
+{
+	margin: 8px;
+}
+
+
+/* ----- IMAGES DE CAMPAGNE ----- */
+
+
+.campaignPicture
+{
+    width: 70%;
+    height: 350px;
+	margin: 35px;
+}
+
+.campaignPicture img
+{
+    width: 100%;
+    height: 100%;
+	border-radius: 10px;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, .3);
+}
+
+
+/* ----- SUPPORT RAID ----- */
+
+
+.raid-holder
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: fit-content;
+    margin: 20px;
+	background: var(--white-color);
+    border-radius: 5px;
+	overflow: hidden;
+    border: 1px solid lightgray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.raid-description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+	height: fit-content;
+}
+
+.raid-description h4
+{
+    font-size: 25px;
+    font-family: 'PT Sans Narrow Bold';
+    color: var(--color-secondary);
+    margin: 8px;
+}
+
+.raid-picture-box
+{
+	position: relative;
+	width: 65%;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.raid-picture-box .raid-text-box
+{
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+	transition: cubic-bezier(0.13, 1.17, 0.3, 0.99) 0.8s;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	padding-bottom: 10%;
+}
+
+.raid-picture-box:hover .raid-text-box
+{
+	left: 0;
+	padding-bottom: 10%;
+}
+
+.raid-text-box h1
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--layout-color);
+	padding-top: 15%;
+}
+
+.raid-text-box p
+{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--layout-color);
+}
+
+
+/* ----- IMAGES DE CAMPAGNE ----- */
+
+
+.side-quests
+{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+}
+
+.quest-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 47%;
+    height: fit-content;
+    padding: 5px;
+	background: var(--white-color);
+	border-radius: 5px;
+    border: 1px solid lightgray;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.quest-content h2
+{
+    font-size: 28px;
+    font-family: 'PT Sans Narrow Bold';
+    color: var(--color-secondary);
+    margin: 15px;
+}

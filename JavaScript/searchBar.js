@@ -4,7 +4,7 @@ let availableKeywords = [
     'Avant-Garde',
     'Dernière Cité',
     'Vex',
-    'Symbiotes des Diables',
+    'Diables Symbiotiques',
     'Déchus',
     'Corrompus',
     'Cabals',
@@ -63,17 +63,17 @@ function generateLinks(item) {
 
         /* Récupère les liens pour les pages Web des factions ennemies */
         'Vex': 'Enemies/Vex/',
-        'Symbiotes des Diables': 'Enemies/DevilSplicer/',
+        'Diables Symbiotiques': 'Enemies/DevilSplicer/',
         'Déchus': 'Enemies/Fallen/',
         'Corrompus': 'Enemies/Taken/',
         'Cabals': 'Enemies/Cabal/',
         'Ruche': 'Enemies/Hive/',
 
         /* Récupère les liens pour les pages Web des extensions */
-        'Les Ténèbres Souterraines': 'Content/DarkBelow',
-        'La Maison des Loups': 'Content/HouseWolves',
-        'Le Roi des Corrompus': 'Content/TakenKing',
-        'Les Seigneurs de Fer': 'Content/RiseIron',
+        'Les Ténèbres Souterraines': 'Content/DarkBelow/',
+        'La Maison des Loups': 'Content/HouseWolves/',
+        'Le Roi des Corrompus': 'Content/TakenKing/',
+        'Les Seigneurs de Fer': 'Content/RiseIron/',
         'La Malédiction d\'Osiris': 'Content/CurseOsiris',
         'Au-delà de la Lumière': 'Content/BeyondLight',
     };

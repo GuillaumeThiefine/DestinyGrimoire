@@ -13,6 +13,7 @@
 @import 'custom_factions.css';
 @import 'accordions.css';
 @import 'nav_bar.css';
+@import 'extentions.css';
 
 
 /* ----- POLICES PERSONNALISÉES ----- */
@@ -28,12 +29,15 @@
 
 
 :root {
-	--background-color: #D7EDE0;
+	--background-color: #DBC8BC;
 	--layout-color: #F5F5F5;
+	--white-color: #FFFFFF;
 
-	--color-primary: #2CA87B;
-	--color-secondary: #00B4D8;
-	--color-tertiary: #50C878;
+	--color-primary: #986960;
+	--color-secondary: #A52A2A;
+	--color-tertiary: #F3CA40;
+
+	--links-color: #DD571C;
 	
 	--success-color: #66B600;
 	--warning-color: #FFC67D;
@@ -122,34 +126,4 @@ a
 {
 	text-decoration: none;
 	color: var(--color-secondary);
-}
-
-table
-{
-	margin: auto;
-	border-collapse: collapse;
-	border: 1px solid #DDDDDD;
-	border-spacing: 30px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-	max-width: 100%;
-}
-
-td, tr
-{
-	text-align: center;
-	border-collapse: collapse;
-	background-color: var(--layout-color);
-	font-size: large;
-	padding: 20px;
-}
-
-table tr td img
-{
-	border-radius: 3px;
-	max-width: 100%;
-}
-
-table tr .Faction_S
-{
-	color: #b7aa9d;
 }
