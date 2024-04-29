@@ -39,3 +39,27 @@
 	text-decoration: none;
 	transition: 0.5s;
 }
+
+.campaign-button
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45%;
+	height: 60px;
+	border-radius: 5px;
+	font-family: 'PassionOne';
+	font-size: 30px;
+	color: var(--layout-color);
+	background: var(--color-secondary);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	transition: 0.5s;
+}
+
+.campaign-button:hover
+{
+	text-decoration: none;
+	transition: 0.5s;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
+	transform: scale(1.05);
+}

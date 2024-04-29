@@ -24,14 +24,14 @@
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--color-tertiary);
     margin-right: 15px;
     transition: ease-in-out 0.5s;
 }
 
 .navbar-home-button:hover
 {
-    background: var(--color-secondary);
+    background: var(--color-tertiary);
     transition: ease-in-out 0.5s;
 }
 
@@ -39,7 +39,7 @@ ion-icon
 {
     width: 60%;
     height: 60%;
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     transition: ease-in-out 0.5s;
 }
 

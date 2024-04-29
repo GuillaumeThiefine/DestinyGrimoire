@@ -48,7 +48,7 @@
 	align-items: center;
 	z-index: 10;
 	flex-direction: column;
-	background: var(--layout-color);
+	background: var(--white-color);
 	box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	transition: bottom 0.5s;
@@ -83,7 +83,7 @@
 	margin: 0;
 	padding: 10px;
 	font-family: "BebasNeue";
-	color: var(--color-secondary);
+	color: var(--cards-color);
 }
 
 .cards-holder .card-hover .card-body p
@@ -128,7 +128,7 @@
 	align-items: center;
 	z-index: 10;
 	flex-direction: column;
-	background: var(--layout-color);
+	background: var(--white-color);
 	box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	transition: bottom 0.5s;
@@ -152,7 +152,7 @@
 	margin: 0;
 	font-family: "BebasNeue";
 	max-width: 100%;
-	color: var(--color-secondary);
+	color: var(--cards-color);
 }
 
 .cards-holder .card-wide-hover .card-wide-body p
@@ -194,7 +194,7 @@
 	align-items: center;
 	z-index: 10;
 	flex-direction: column;
-	background: var(--layout-color);
+	background: var(--white-color);
 	box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	transition: bottom 0.5s;

@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="./CSS/style.css" />
         <link rel="shortcut icon" href="./assets/Pictures/SiteLogoBlack.ico" >
 		<title>Accueil | Destiny Grimoire</title>
+
+		<base href="https://guillaumethiefine.github.io/DestinyGrimoire/">
 	</head>
 	<body>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark px-4 mb-4">
@@ -19,9 +21,6 @@
 				<img src="./assets/Pictures/SiteLogoWhite.png" alt="Logo" width="40" height="40" class="d-inline-block align-center">
 			</div>
             <ul class="navbar-nav me-auto mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#DestinyIntro">Synopsis - Destiny</a>
-                </li>
 				<li class="nav-item">
 					<a class="nav-link" href="#DestinyCampaign">Campagne - Destiny</a>
 				</li>
@@ -31,9 +30,6 @@
 				<li class="nav-item px-2 py-1 col-12 col-lg-auto">
                     <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
                 </li>
-				<li class="nav-item">
-					<a class="nav-link" href="#Destiny2Intro">Synopsis - Destiny 2</a>
-				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#Destiny2Campaign">Campagne - Destiny 2</a>
 				</li>
@@ -51,7 +47,7 @@
 			<script src="./JavaScript/searchBar.js"></script>
 		</nav>
 		
-		<section id="DestinyIntro">
+		<section id="DestinyCampaign">
 			<div class="medium-container">
 				<div class="content-header">
 					<h2>L'HISTOIRE DE DESTINY</h2>
@@ -75,8 +71,11 @@
 			<div class="small-separator"></div>
 
 			<div class="medium-container">
-				<iframe width="900" height="475" src="https://www.youtube.com/embed/-4wMBT0r48k" title="Cinématique Relève" frameborder="0"
-				allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/-4wMBT0r48k" title="Cinématique Relève" frameborder="0"
+					allowfullscreen>
+				</iframe>
+				<a class="campaign-button" href="./Campaign">VOIR LA CAMPAGNE COMPLÈTE</a>
+				<div class="small-separator"></div>
 			</div>
 		</section>
 
@@ -165,7 +164,7 @@
 							</span></span>.
 							Après avoir fait connaissance, le Guide vous informe que la
 							<span class="tooltip-box">Ruche<span class="tooltip-popup">
-								<img src="./Enemies/Hive/Pictures/Hive.jpg">
+								<img src="./Enemies/Hive/Pictures/Hive.webp">
 								La Ruche serait l'une des races aliens les plus anciennes et auraient été maintenues en vie par d'anciennes magies
 								oubliées. Ils s'installent au plus profond des planètes, crééent d'immenses réseaux de grottes sans se soucier des dégâts
 								causés.
@@ -174,7 +173,7 @@
 							</span></span>,
 							qui a tué d'inombrables Gardiens sur la <strong>Lune</strong>, est de retour pour envahir la Dernière Cité.
 							<br/><br/>
-							Vous vous rendez donc sur la Lune, votre première <a href="./Planets/SolarSystem">destination</a>, pour enquêter sur la Ruche. 
+							Vous vous rendez donc sur la Lune, votre première <a href="./Destinations/">destination</a>, pour enquêter sur la Ruche. 
 							Lors de votre enquête, vous recevez un message urgent qui vous indique que la Ruche essaie de vider le Voyageur de sa Lumière
 							et qu'il faut les arrêter à tout prix.
 							<br/>
@@ -235,7 +234,7 @@
 				</div>
 				<div class="cards-holder">
 					<div class="card-wide-hover mx-auto">
-						<a href="Content/DarkBelow">
+						<a href="./Expansions/DarkBelow">
 							<img src="./Expansions/DarkBelow/Pictures/DarkBelow.webp" class="card-img-top" alt="Ténèbres Souterraines">
 						</a>
 						<div class="card-wide-body">
@@ -249,7 +248,7 @@
 						</div>
 					</div>
 					<div class="card-wide-hover mx-auto">
-						<a href="./Content/HouseWolves">
+						<a href="./Expansions/HouseWolves">
 							<img src="./Expansions/HouseWolves/Pictures/HouseWolves.webp" class="card-img-top" alt="Maison des Loups">
 						</a>
 						<div class="card-wide-body">
@@ -263,7 +262,7 @@
 						</div>
 					</div>
 					<div class="card-wide-hover mx-auto">
-						<a href="./Content/TakenKing">
+						<a href="./Expansions/TakenKing">
 							<img src="./Expansions/TakenKing/Pictures/TakenKing.webp" class="card-img-top" alt="Roi des Corrompus">
 						</a>
 						<div class="card-wide-body">
@@ -277,7 +276,7 @@
 						</div>
 					</div>
 					<div class="card-wide-hover mx-auto">
-						<a href="./Content/RiseIron">
+						<a href="./Expansions/RiseIron">
 							<img src="./Expansions/RiseIron/Pictures/RiseIron.webp" class="card-img-top" alt="Seigneurs de Fer">
 						</a>
 						<div class="card-wide-body">

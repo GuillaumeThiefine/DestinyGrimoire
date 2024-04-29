@@ -9,11 +9,12 @@
 @import 'tooltips.css';
 @import 'modals.css';
 @import 'layout.css';
-@import 'custom_elements.css';
 @import 'custom_factions.css';
 @import 'accordions.css';
 @import 'nav_bar.css';
-@import 'extentions.css';
+@import 'expansions.css';
+@import 'destinations.css';
+@import 'headers.css';
 
 
 /* ----- POLICES PERSONNALISÉES ----- */
@@ -29,15 +30,16 @@
 
 
 :root {
-	--background-color: #DBC8BC;
+	--background-color: #E6E6E6;
 	--layout-color: #F5F5F5;
 	--white-color: #FFFFFF;
 
-	--color-primary: #986960;
-	--color-secondary: #A52A2A;
-	--color-tertiary: #F3CA40;
+	--color-primary: #FF5F1F;
+	--color-secondary: #FDA50F;
+	--color-tertiary: #09D0EF;
 
-	--links-color: #DD571C;
+	--links-color: #F4C430;
+	--cards-color: #16abc2;
 	
 	--success-color: #66B600;
 	--warning-color: #FFC67D;
@@ -66,8 +68,11 @@ section
 
 iframe
 {
+	width: 65%;
+	height: 575px;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	border-radius: 5px;
 }
 
 p
@@ -125,5 +130,5 @@ body
 a
 {
 	text-decoration: none;
-	color: var(--color-secondary);
+	color: var(--links-color);
 }

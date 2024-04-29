@@ -26,8 +26,6 @@ let availableKeywords = [
 const inputBox = document.getElementById('search-box');
 const resultsBox = document.querySelector('.result-box');
 
-var sitePath = './';
-
 inputBox.onkeyup = function() {
     let result = [];
     let input = inputBox.value;
@@ -42,7 +40,7 @@ inputBox.onkeyup = function() {
 
 function display(result) {
     const content = result.map((list) => {
-        var pageLink = "<a href='" + sitePath + generateLinks(list) + "'>" + list + "</a>";
+        var pageLink = "<a href='" + generateLinks(list) + "'>" + list + "</a>";
         return "<li>" + pageLink + "</li>";
     });
 
@@ -54,28 +52,21 @@ function display(result) {
 }
 
 function generateLinks(item) {
+    const siteUrl = 'https://guillaumethiefine.github.io/DestinyGrimoire/';
     const links = {
-        /* Récupère les liens pour les pages Web principales */
-        'Voyageur': 'LastCity/Traveler',
-        'Destinations': 'Planets/SolarSystem',
-        'Avant-Garde': 'LastCity/Vanguard',
-        'Dernière Cité': 'LastCity/LastCity',
-
         /* Récupère les liens pour les pages Web des factions ennemies */
-        'Vex': 'Enemies/Vex/',
-        'Diables Symbiotiques': 'Enemies/DevilSplicer/',
-        'Déchus': 'Enemies/Fallen/',
-        'Corrompus': 'Enemies/Taken/',
-        'Cabals': 'Enemies/Cabal/',
-        'Ruche': 'Enemies/Hive/',
+        'Vex': `${siteUrl}/Enemies/Vex/`,
+        'Diables Symbiotiques': `${siteUrl}/Enemies/DevilSplicer/`,
+        'Déchus': `${siteUrl}/Enemies/Fallen/`,
+        'Corrompus': `${siteUrl}/Enemies/Taken/`,
+        'Cabals': `${siteUrl}/Enemies/Cabal/`,
+        'Ruche': `${siteUrl}/Enemies/Hive/`,
 
         /* Récupère les liens pour les pages Web des extensions */
-        'Les Ténèbres Souterraines': 'Content/DarkBelow/',
-        'La Maison des Loups': 'Content/HouseWolves/',
-        'Le Roi des Corrompus': 'Content/TakenKing/',
-        'Les Seigneurs de Fer': 'Content/RiseIron/',
-        'La Malédiction d\'Osiris': 'Content/CurseOsiris',
-        'Au-delà de la Lumière': 'Content/BeyondLight',
+        'Les Ténèbres Souterraines': `${siteUrl}/Expansions/DarkBelow/`,
+        'La Maison des Loups': `${siteUrl}/Expansions/HouseWolves/`,
+        'Le Roi des Corrompus': `${siteUrl}/Expansions/TakenKing/`,
+        'Les Seigneurs de Fer': `${siteUrl}/Expansions/RiseIron/`,
     };
     
     return links[item] || '#';
