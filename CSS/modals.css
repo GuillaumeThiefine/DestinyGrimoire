@@ -1,8 +1,8 @@
 
-/* ----- MODAL PERSONNALISE ----- */
+/* ----- CUSTOM MODAL ----- */
 
 
-.button-modal
+.modalButton
 {
 	padding-left: 0.75rem;
 	padding-right: 0.75rem;
@@ -15,7 +15,7 @@
 	border-radius: 5px;
 }
 
-.modal-container
+.modalContainer
 {
 	position: fixed;
 	top: 0;
@@ -32,13 +32,13 @@
 	z-index: 145;
 }
 
-.modal-container.show
+.modalContainer.show
 {
 	pointer-events: auto;
 	opacity: 1;
 }
 
-.modal-container .simple-modal
+.modalContainer .simpleModal
 {
 	background-color: var(--layout-color);
 	width: 800px;
@@ -51,18 +51,18 @@
 	z-index: 150;
 }
 
-.modal-container .simple-modal h2
+.modalContainer .simpleModal h2
 {
 	color: var(--color-secondary);
-	font-family: "BebasNeue";
+	font-family: 'BebasNeue';
 }
 
-.modal-container .simple-modal a
+.modalContainer .simpleModal a
 {
 	margin: 5px;
 }
 
-.modal-container .simple-modal .golden-age
+.simpleModal .goldenAge
 {
 	padding-left: 25px;
 	padding-right: 25px;
@@ -70,7 +70,7 @@
 	padding-bottom: 8px;
 }
 
-.modal-container .simple-modal .collapse-age
+.simpleModal .collapseAge
 {
 	padding-left: 27.5px;
 	padding-right: 27.5px;
@@ -78,7 +78,7 @@
 	padding-bottom: 8px;
 }
 
-.modal-container .simple-modal .dark-age
+.simpleModal .darkAge
 {
 	padding-left: 14px;
 	padding-right: 14px;
@@ -86,7 +86,7 @@
 	padding-bottom: 8px;
 }
 
-.modal-container .simple-modal .city-age
+.simpleModal .cityAge
 {
 	padding-left: 8px;
 	padding-right: 8px;
@@ -94,7 +94,7 @@
 	padding-bottom: 8px;
 }
 
-.modal-container .simple-modal img
+.modalContainer .simpleModal img
 {
 	width: 16px;
 	height: 16px;

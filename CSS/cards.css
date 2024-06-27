@@ -1,7 +1,8 @@
-/* ----- CARTES CSS ----- */
+
+/* ----- CSS CARDS ----- */
 
 
-.cards-holder
+.cardsHolder
 {
 	position: relative;
 	width: 90%;
@@ -13,16 +14,16 @@
 	max-width: 100%;
 }
 
-.large-container .cards-holder
+.largeContainer .cardsHolder
 {
 	width: 98%;
 }
 
 
-/* ----- PETITES CARTES CSS ----- */
+/* ----- SMALL CARDS ----- */
 
 
-.cards-holder .card-hover
+.cardsHolder .cardHover
 {
 	position: relative;
 	width: 18%;
@@ -37,7 +38,7 @@
 	border-radius: 5px;
 }
 
-.cards-holder .card-hover .card-body
+.cardsHolder .cardHover .cardBody
 {
 	position: absolute;
 	bottom: -110px;
@@ -55,7 +56,7 @@
 	max-width: 100%;
 }
 
-.cards-holder .card-hover-empty
+.cardsHolder .cardHoverEmpty
 {
 	position: relative;
 	width: 18%;
@@ -68,13 +69,13 @@
 	background-color: var(--layout-color);
 }
 
-.cards-holder .card-hover:hover .card-body
+.cardsHolder .cardHover:hover .cardBody
 {
 	bottom: 0px;
 	max-width: 100%;
 }
 
-.cards-holder .card-hover .card-body h5
+.cardsHolder .cardHover .cardBody h5
 {
 	width: 90%;
 	display: flex;
@@ -82,11 +83,11 @@
 	align-items: center;
 	margin: 0;
 	padding: 10px;
-	font-family: "BebasNeue";
+	font-family: 'BebasNeue';
 	color: var(--cards-color);
 }
 
-.cards-holder .card-hover .card-body p
+.cardsHolder .cardHover .cardBody p
 {
 	width: 90%;
 	height: fit-content;
@@ -97,10 +98,10 @@
 }
 
 
-/* ----- CARTES MOYENNES CSS ----- */
+/* ----- MEDIUM CARDS ----- */
 
 
-.cards-holder .card-wide-hover
+.cardsHolder .cardWideHover
 {
 	position: relative;
 	width: 24%;
@@ -116,7 +117,7 @@
 	border-radius: 5px;
 }
 
-.cards-holder .card-wide-hover .card-wide-body
+.cardsHolder .cardWideHover .cardWideBody
 {
 	position: absolute;
 	bottom: -170px;
@@ -135,14 +136,14 @@
 	max-width: 100%;
 }
 
-.cards-holder .card-wide-hover:hover .card-wide-body
+.cardsHolder .cardWideHover:hover .cardWideBody
 {
 	bottom: -25px;
     padding-bottom: 10px;
 	max-width: 100%;
 }
 
-.cards-holder .card-wide-hover .card-wide-body h5
+.cardsHolder .cardWideHover .cardWideBody h5
 {
 	width: 90%;
 	display: flex;
@@ -150,12 +151,12 @@
 	align-items: center;
     padding: 10px;
 	margin: 0;
-	font-family: "BebasNeue";
+	font-family: 'BebasNeue';
 	max-width: 100%;
 	color: var(--cards-color);
 }
 
-.cards-holder .card-wide-hover .card-wide-body p
+.cardsHolder .cardWideHover .cardWideBody p
 {
 	width: 90%;
 	height: fit-content;
@@ -165,10 +166,10 @@
 }
 
 
-/* ----- GRANDES CARTES CSS ----- */
+/* ----- LARGE CARDS ----- */
 
 
-.cards-holder .card-large-hover
+.cardsHolder .cardLargeHover
 {
 	position: relative;
 	width: 60%;
@@ -183,7 +184,7 @@
 	border-radius: 2px;
 }
 
-.cards-holder .card-large-hover .card-large-body
+.cardsHolder .cardLargeHover .cardLargeBody
 {
 	position: absolute;
 	bottom: -110px;
@@ -201,27 +202,27 @@
 	max-width: 100%;
 }
 
-.cards-holder .card-large-hover:hover .card-large-body
+.cardsHolder .cardLargeHover:hover .cardLargeBody
 {
 	bottom: -10px;
     padding-bottom: 10px;
 	max-width: 100%;
 }
 
-.cards-holder .card-large-hover .card-large-body h5
+.cardsHolder .cardLargeHover .cardLargeBody h5
 {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
     padding: 10px;
-	font-family: "BebasNeue";
+	font-family: 'BebasNeue';
 	color: var(--color-secondary);
 	max-width: 100%;
 	margin: 0;
 }
 
-.cards-holder .card-large-hover .card-large-body p
+.cardsHolder .cardLargeHover .cardLargeBody p
 {
 	width: 95%;
 	font-size: 18px;

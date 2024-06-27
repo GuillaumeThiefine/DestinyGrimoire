@@ -1,32 +1,33 @@
 
-/* ----- FICHIERS CSS ----- */
+/* ----- CSS FILES ----- */
 
 
 @import 'cards.css';
 @import 'bootstrap.css';
-@import 'search_bar.css';
+@import 'searchBar.css';
 @import 'buttons.css';
 @import 'tooltips.css';
 @import 'modals.css';
 @import 'layout.css';
-@import 'custom_factions.css';
+@import 'customFactions.css';
 @import 'accordions.css';
-@import 'nav_bar.css';
+@import 'navBar.css';
 @import 'expansions.css';
 @import 'destinations.css';
 @import 'headers.css';
+@import 'logo.css';
 
 
-/* ----- POLICES PERSONNALISÉES ----- */
+/* ----- CUSTOM FONTS ----- */
 
 
-@font-face { font-family: "PT Sans Narrow"; src: url(../Fonts/PTSansNarrow-Regular.ttf);}
-@font-face { font-family: "PT Sans Narrow Bold"; src: url(../Fonts/PTSansNarrow-Bold.ttf);}
-@font-face { font-family: "BebasNeue"; src: url(../Fonts/BebasNeue-Regular.ttf);}
-@font-face { font-family: "PassionOne"; src: url(../Fonts/PassionOne-Regular.ttf);}
+@font-face { font-family: 'PT Sans Narrow'; src: url(../Fonts/PTSansNarrow-Regular.ttf);}
+@font-face { font-family: 'PT Sans Narrow Bold'; src: url(../Fonts/PTSansNarrow-Bold.ttf);}
+@font-face { font-family: 'BebasNeue'; src: url(../Fonts/BebasNeue-Regular.ttf);}
+@font-face { font-family: 'PassionOne'; src: url(../Fonts/PassionOne-Regular.ttf);}
 
 
-/* ----- PALETTE DE COULEURS ----- */
+/* ----- COLOR PALETTE ----- */
 
 
 :root {
@@ -78,33 +79,33 @@ iframe
 p
 {
 	width: 95%;
-	font-family: "PT Sans Narrow";
+	font-family: 'PT Sans Narrow';
 	font-size: larger;
 }
 
 strong
 {
-	font-family: "PT Sans Narrow Bold";
+	font-family: 'PT Sans Narrow Bold';
 	font-size: 18.5px;
 	color: var(--color-tertiary);
 }
 
 h5
 {
-	font-family: "PT Sans Narrow Bold";
+	font-family: 'PT Sans Narrow Bold';
 	font-size: 25px;
 }
 
 h2
 {
-	font-family: "PT Sans Narrow";
+	font-family: 'PT Sans Narrow';
 	text-align: center;
 	color: var(--color-primary);
 }
 
 h1
 {
-	font-family: "PT Sans Narrow Bold";
+	font-family: 'PT Sans Narrow Bold';
 	text-align: left;
 	color: var(--color-primary);
 }

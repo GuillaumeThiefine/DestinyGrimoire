@@ -1,278 +1,317 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' charset='utf-8' />
         <!-- ---------- BOOTSTRAP ---------- -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'
+		integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'>
+
+        <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js'
+            integrity='sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r' crossorigin='anonymous'>
+        </script>
+        <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js'
+            integrity='sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy' crossorigin='anonymous'>
+        </script>
         <!-- ---------- IONICONS ---------- -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <!-- ---------- CSS + ICONE ---------- -->
-		<link rel="stylesheet" href="../CSS/style.css" />
-        <link rel="shortcut icon" href="../assets/Pictures/SiteLogoBlack.ico" >
+        <script type='module' src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+		<script nomodule src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+        <!-- ---------- CSS + ICONS ---------- -->
+		<link rel='stylesheet' href='../CSS/style.css' />
+        <link rel='shortcut icon' href='../assets/Pictures/SiteLogoBlack.ico' />
 		<title>Destinations | Destiny Grimoire</title>
 	</head>
 
 	<body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 mb-4">
-            <div class="navbar-logo">
-				<img src="../assets/Pictures/PlacesCard.png" alt="Barre de Navigation">
+        <nav class='navbar navbar-expand-lg navbar-dark bg-dark px-4 mb-4'>
+            <div class='navbarLogo'>
+				<img src='../assets/Pictures/PlacesCard.png' alt='Barre de Navigation'>
 			</div>
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#Destinations">Destinations - Destiny</a>
+            <ul class='navbar-nav me-auto'>
+                <li class='nav-item'>
+                    <a class='nav-link' href='#Destinations'>Destinations - Destiny</a>
                 </li>
-                <li class="nav-item px-3 py-1 col-12 col-lg-auto">
-                    <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                <li class='nav-item px-3 py-1 col-12 col-lg-auto'>
+                    <div class='vr d-none d-lg-flex h-100 mx-lg-2 text-white'></div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#NewDestinations">Destinations - Destiny 2</a>
+                <li class='nav-item'>
+                    <a class='nav-link' href='#NewDestinations'>Destinations - Destiny 2</a>
                 </li>
             </ul>
-            <a class="navbar-home-button" href="../" role="button">
-                <ion-icon name="home" class="navbar-icon"></ion-icon>
+            <a class='navbarHomeButton' href='../' role='button'>
+                <ion-icon name='home' class='navbar-icon'></ion-icon>
             </a>
-            <div class="search-box">
-				<label for="search-box">
-					<input type="text" name="search-box" id="search-box" placeholder="Rechercher..." autocomplete="chrome-off">
+            <div class='searchBox'>
+				<label for='searchBox'>
+					<input type='text' name='searchBox' id='searchBox' placeholder='Rechercher...' autocomplete='chrome-off'>
 				</label>
-				<div class="result-box">
+				<div class='resultBox'>
 				</div>
 			</div>
-			<script src="../JavaScript/searchBar.js"></script>
+			<script src='../JavaScript/searchBar.js'></script>
         </nav>
 
-        <section id="Destinations">
-            <div class="medium-separator"></div>
-            <div class="large-container">
-                <div class="content-header">
+        <section id='Destinations'>
+            <div class='mediumSeparator'></div>
+            <div class='largeContainer'>
+                <div class='contentHeader'>
                     <h2>DESTINATIONS - DESTINY</h2>
                 </div>
                 <p>
                     Au cours de votre aventure sur <strong>Destiny</strong>, vous serez amenés à découvrir différentes destinations, qui sont au
                     nombre de <strong>quatre</strong>.
                 </p>
-                <div class="planets-holder">
-                    <div class="planet-content">
-                        <img src="Pictures/Cosmodrome.webp" alt="Cosmodrome">
-                        <div class="planet-text-content">
+                <div class='planetsHolder'>
+                    <div class='planetContent'>
+                        <img src='Pictures/Cosmodrome.webp' alt='Cosmodrome' data-bs-toggle='modal' data-bs-target='#firstModal'>
+                        <div class='planetTextContent'>
                             <h2>TERRE - COSMODROME</h2>
                         </div>
                     </div>
-                    <div class="planet-content">
-                        <img src="Pictures/Moon.webp" alt="Océan des Tempêtes">
-                        <div class="planet-text-content">
+                    <div class='planetContent'>
+                        <img src='Pictures/Moon.webp' alt='Océan des Tempêtes' data-bs-toggle='modal' data-bs-target='#secondModal'>
+                        <div class='planetTextContent'>
                             <h2>LUNE - OCÉAN DES TEMPÊTES</h2>
                         </div>
                     </div>
                 </div>
-                <div class="planets-holder">
-                    <div class="planet-content">
-                        <img src="Pictures/Venus.webp" alt="Dépression d'Ishtar">
-                        <div class="planet-text-content">
-                            <h2>VÉNUS - DÉPRESSION D'ISHTAR</h2>
-                        </div>
-                    </div>
-                    <div class="planet-content">
-                        <img src="Pictures/Mars.webp" alt="Baie du Méridien">
-                        <div class="planet-text-content">
+                <div class='planetsHolder'>
+                    <div class='planetContent'>
+                        <img src='Pictures/Mars.webp' alt='Baie du Méridien' data-bs-toggle='modal' data-bs-target='#thirdModal'>
+                        <div class='planetTextContent'>
                             <h2>MARS - BAIE DU MÉRIDIEN</h2>
                         </div>
                     </div>
+                    <div class='planetContent'>
+                        <img src='Pictures/Venus.webp' alt='Dépression d Ishtar' data-bs-toggle='modal' data-bs-target='#fourthModal'>
+                        <div class='planetTextContent'>
+                            <h2>VÉNUS - DÉPRESSION D'ISHTAR</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="large-container">
-                <div class="content-header">
-                    <h2>COSMODROME, TERRE</h2>
-                </div>
-                <p>
-                    Exploité par le <strong>Bureau Fédéral Russe de l'Aéronautique</strong>, ou <strong>PФБA</strong>, le Cosmodrome était
-                    un lien vital avec l'espace pendant l'Age d'Or de l'humanité; et des siècles après la Chute, on peut encore voir sur la
-                    rampe de lancement les vestiges de vaisseaux coloniaux oubliés, attendant de voler à nouveau.
-                    <br/>
-                    Le vaisseau au centre de la zone était l'un des derniers vaisseaux à tenter d'échapper aux Ténèbres, mais n'a pas pu
-                    décoller en raison de l'explosion d'une conduite de carburant.
-                    <br/><br/>
-                    Outre le lancement de vaisseaux coloniaux, le Cosmodrome  était vital pour son réseau planétaire qui maintenait le contact
-                    avec les colonies, et pour abriter <strong>l'Esprit Tutélaire Raspoutine</strong>, qui était chargé de protéger la Terre des
-                    menaces extérieures.
-                    <br/>
-                    Depuis la Chute, la <strong>Maison des Diables</strong> en a fait son repère, tandis qu'une force d'invasion de la
-                    <span class="tooltip-box">Ruche<span class="tooltip-popup">
-                        <img src="../Enemies/Hive/Pictures/Hive.webp">
-                        La Ruche serait l'une des races aliens les plus anciennes et auraient été maintenues en vie par d'anciennes magies
-                        oubliées. Ils s'installent au plus profond des planètes, crééent d'immenses réseaux de grottes sans se soucier des
-                        dégâts causés.
-                        <br/>
-                        <a class="button-blue" href="../Enemies/Hive/">Ennemis: la Ruche</a>
-                    </span></span>
-                    se bat pour établir une tête de pont en vue d'une invasion imminente de la Terre, et que la <strong>Maison des Rois</strong>
-                    surveille depuis l'ancien centre de contrôle.
-                </p>
+            <!-- EARTH PLANET SUPPORT -->
+            <div class='modal fade' id='firstModal' tabindex='-1'>
+                <div class='modal-dialog modal-dialog-centered'>
+                    <div class='modal-content'>
+                        <div class='modal-body'>
+                            
+                            <div class='contentHeader'>
+                                <h2>COSMODROME, TERRE</h2>
+                            </div>
+                            <p>
+                                Exploité par le <strong>Bureau Fédéral Russe de l'Aéronautique</strong>, ou <strong>PФБA</strong>, le Cosmodrome
+                                était un lien vital avec l'espace pendant l'Age d'Or de l'humanité; et des siècles après la Chute, on peut encore
+                                voir sur la rampe de lancement les vestiges de vaisseaux coloniaux oubliés, attendant de voler à nouveau.
+                                <br/>
+                                Le vaisseau au centre de la zone était l'un des derniers vaisseaux à tenter d'échapper aux Ténèbres, mais n'a pas pu
+                                décoller en raison de l'explosion d'une conduite de carburant.
+                                <br/><br/>
+                                Outre le lancement de vaisseaux coloniaux, le Cosmodrome  était vital pour son réseau planétaire qui maintenait le
+                                contact avec les colonies, et pour abriter <strong>l'Esprit Tutélaire Raspoutine</strong>, qui était chargé de protéger
+                                la Terre des menaces extérieures.
+                                <br/>
+                                Depuis la Chute, la <strong>Maison des Diables</strong> en a fait son repère, tandis qu'une force d'invasion de la
+                                <span class='tooltipBox'>Ruche<span class='tooltipPopup'>
+                                    <img src='../Enemies/Hive/Pictures/Hive.webp'>
+                                    La Ruche serait l'une des races aliens les plus anciennes et auraient été maintenues en vie par d'anciennes magies
+                                    oubliées. Ils s'installent au plus profond des planètes, crééent d'immenses réseaux de grottes sans se soucier des
+                                    dégâts causés.
+                                    <br/>
+                                    <a class='primaryButton' href='../Enemies/Hive/'>Ennemis: la Ruche</a>
+                                </span></span>
+                                se bat pour établir une tête de pont en vue d'une invasion imminente de la Terre, et que la
+                                <strong>Maison des Rois</strong> surveille depuis l'ancien centre de contrôle.
+                            </p>
+                            <div class='planetsPanel'>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Cosmodrome_1.webp' alt='Cosmodrome - 1'>
+                                </div>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Cosmodrome_2.webp' alt='Cosmodrome - 2'>
+                                </div>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Cosmodrome_3.webp' alt='Cosmodrome - 3'>
+                                </div>
+                            </div>
 
-                <div style="width: 70%; border-bottom: 1px solid rgb(165, 164, 164); margin: 25px"></div>
-                <div class="planets-description">
-                    <div class="planet-picture">
-                        <img src="Pictures/Cosmodrome_1.webp" alt="Cosmodrome - 1">
-                    </div>
-                    <div class="planet-picture">
-                        <img src="Pictures/Cosmodrome_2.webp" alt="Cosmodrome - 2">
-                    </div>
-                    <div class="planet-picture">
-                        <img src="Pictures/Cosmodrome_3.webp" alt="Cosmodrome - 3">
+                        </div>
+                        <div class='modal-footer'>
+                            <button type='button' data-bs-dismiss='modal'>Fermer</button>
+                        </div>
                     </div>
                 </div>
-                <div style="width: 70%; border-bottom: 1px solid rgb(165, 164, 164); margin: 25px"></div>
             </div>
 
-            <div class="medium-separator"></div>
+            <!-- MOON PLANET SUPPORT -->
+            <div class='modal fade' id='secondModal' tabindex='-1'>
+                <div class='modal-dialog modal-dialog-centered'>
+                    <div class='modal-content'>
+                        <div class='modal-body'>
+                            
+                            <div class='contentHeader'>
+                                <h2>OCÉAN DES TEMPÊTES, LUNE</h2>
+                            </div>
+                            <p>
+                                Pendant l'Age d'Or, la Lune servait d'avant-poste pour supporter les colonies de l'humanité à travers le système. Les
+                                restes d'un accélérateur et d'une base lunaire peuvent être trouvés, utilisés pour délivrer des ressources aux colonies.
+                                La lune abritait autrefois une colonie humaine prospère composée de bases interconnectées, mais aujourd'hui,
+                                seuls des dômes brisés et des combinaisons spatiales éparpillées témoignent du déclin de la domination de l'humanité.
+                                <br/>
+                                Après la Chute, la Lune a été occuppée par la Ruche, dirigée par <strong>Cropta, fils d'Oryx</strong>, cherchant le
+                                <strong>Voyageur</strong>, ainsi que ses porteurs de Lumière.
+                                <br/><br/>
+                                <strong>Rezzyl Azzir</strong> a fait le premier contact avec la Ruche sur la Lune, avant de retourner prévenir la
+                                <strong>Dernière Cité</strong> de la menace qu'ils représentent. Les <strong>Gardiens</strong> ont essayé de reprendre
+                                la Lune à la Ruche lors d'une bataille au cours de laquelle des milliers de Gardiens ont été tués par Cropta. Cette
+                                bataille fut nommée <strong>'le Grand Désastre'</strong>. Depuis cette bataille, la Lune est classifiée
+                                Zone Interdite, uniquement accessible aux Gardiens les plus expérimentés.
+                                <br/>
+                                La Ruche a désormais entièrement infesté le satellite de la Terre, et une forteresse massive connue sous le nom de
+                                <strong>Gouffre des Enfers</strong>, s'ouvre là ou la Ruche a commencé à creuser, et des réseaux tentaculaires de
+                                grottes et de points fortifiés attendent à l'intérieur.
+                            </p>
+                            <div class='planetsPanel'>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Moon_1.webp' alt='Lune - 1'>
+                                </div>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Moon_2.webp' alt='Lune - 2'>
+                                </div>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Moon_3.webp' alt='Lune - 3'>
+                                </div>
+                            </div>
 
-            <div class="large-container">
-                <div class="content-header">
-                    <h2>OCÉAN DES TEMPÊTES, LUNE</h2>
-                </div>
-                <p>
-                    Pendant l'Age d'Or, la Lune servait d'avant-poste pour supporter les colonies de l'humanité à travers le système. Les
-                    restes d'un accélérateur et d'une base lunaire peuvent être trouvés, utilisés pour délivrer des ressources aux colonies.
-                    La lune abritait autrefois une colonie humaine prospère composée de bases interconnectées, mais aujourd'hui,
-                    seuls des dômes brisés et des combinaisons spatiales éparpillées témoignent du déclin de la domination de l'humanité.
-                    <br/><br/>
-                    Après la Chute, la Lune a été occuppée par la Ruche, dirigée par <strong>Cropta, fils d'Oryx</strong>, cherchant le
-                    <strong>Voyageur</strong>, ainsi que ses porteurs de Lumière.
-                    <br/><br/>
-                    <strong>Rezzyl Azzir</strong> a fait le premier contact avec la Ruche sur la Lune, avant de retourner prévenir la
-                    <strong>Dernière Cité</strong> de la menace qu'ils représentent. Les <strong>Gardiens</strong> ont essayé de reprendre
-                    la Lune à la Ruche lors d'une bataille au cours de laquelle des milliers de Gardiens ont été tués par Cropta. Cette
-                    bataille fut nommée <strong>"le Grand Désastre"</strong>. Depuis cette bataille, la Lune est classifiée
-                    Zone Interdite, uniquement accessible aux Gardiens les plus expérimentés.
-                    <br/>
-                    La Ruche a désormais entièrement infesté le satellite de la Terre, et une forteresse massive connue sous le nom de
-                    <strong>Gouffre des Enfers</strong>, s'ouvre là ou la Ruche a commencé à creuser, et des réseaux tentaculaires de
-                    grottes et de points fortifiés attendent à l'intérieur.
-                </p>
-
-                <div style="width: 70%; border-bottom: 1px solid rgb(165, 164, 164); margin: 25px"></div>
-                <div class="planets-description">
-                    <div class="planet-picture">
-                        <img src="Pictures/Moon_1.webp" alt="Lune - 1">
-                    </div>
-                    <div class="planet-picture">
-                        <img src="Pictures/Moon_2.webp" alt="Lune - 2">
-                    </div>
-                    <div class="planet-picture">
-                        <img src="Pictures/Moon_3.webp" alt="Lune - 3">
+                        </div>
+                        <div class='modal-footer'>
+                            <button type='button' data-bs-dismiss='modal'>Fermer</button>
+                        </div>
                     </div>
                 </div>
-                <div style="width: 70%; border-bottom: 1px solid rgb(165, 164, 164); margin: 25px"></div>
             </div>
 
-            <div class="medium-separator"></div>
-
-            <div class="large-container">
-                <div class="content-header">
-                    <h2>BAIE DU MÉRIDIEN, MARS</h2>
+            <!-- MARS PLANET SUPPORT -->
+            <div class='modal fade' id='thirdModal' tabindex='-1'>
+                <div class='modal-dialog modal-dialog-centered'>
+                    <div class='modal-content'>
+                        <div class='modal-body'>
+                            <div class='contentHeader'>
+                                <h2>BAIE DU MÉRIDIEN, MARS</h2>
+                            </div>
+                            <p>
+                                Depuis la Chute, une grande partie de Mars est retournée à la désolation avant l'arrivée du Voyageur. Comme le reste
+                                des planètes du système solaire, Mars est recouverte de ruines datant de l'Age d'Or. C'est le foyer de Raspoutine,
+                                l'Esprit Tutélaire, une intelligence artificielle programmée pour défendre l'humanité des menaces extérieures.
+                                <br/><br/>
+                                Avec l'arrivée du Voyageur, la pluie s'est abattue sur Mars, et c'est ici que l'humanité a fait sa première
+                                rencontre avec l'entité sphérique. Une fois la terraformation de Mars complétée, une métropole prospère appelée
+                                <strong>Eleuthéria</strong> est venue dominer l'horizon - un bastion de la vie humaine sur Mars.
+                                <br/>
+                                L'entreprise <strong>Clovis Bray</strong> a eu une forte présence à Eleuthéria, et a commencé à installer ses propres
+                                installations privées, dont une dans le Bassin d'Hellas, qui agissait comme une attraction pour touristes et un site de
+                                recherches sur la technologie des Esprits Tutélaires. Cette installation contient aussi le coeur de l'Esprit Tutélaire
+                                Raspoutine.
+                                <br/><br/>
+                                Mars est sujette  aux incursions de plusieurs factions ennemies, qui sont les Cabals, les
+                                <span class='tooltipBox'>Vex<span class='tooltipPopup'>
+                                    <img src='../assets/Tooltip/Vex.webp'>
+                                    Les Vex sont une espèce composée d'entités biomécaniques capables de voyager dans le temps. Ils sont arrivés dans
+                                    notre système solaire par des portails temporels. Nous ignorons cependant s'ils viennent du passé ou du futur, et nous
+                                    ignorons également leur véritable objectif.
+                                    <br/>
+                                    <a class='primaryButton' href='../Enemies/Vex/'>Ennemis: les Vex</a>
+                                </span></span>
+                                et la Ruche. Les deux premiers se retrouveront
+                                opposés dans une guerre d'usure dans la Baie du Méridien, une région entourant Eleuthéria; les Cabals se disputant
+                                l'exploitation des ressources et l'étude des artéfacts et structures Vex de la région, dont l'énorme portail d'accès au
+                                <span class='tooltipBox'>Jardin Noir<span class='tooltipPopup'>
+                                    <img src='../assets/Tooltip/BlackGarden.webp'>
+                                    Le Jardin Noir est un royaume de Ténèbres, isolé hors du temps et de l'espace. 
+                                    On raconte que cet endroit serait le lieu de naissance des Vex. Nous ne savons quasiment rien à propos du Jardin Noir,
+                                    mais il semble bien gardé par les Sol Reclus. Peu de Gardiens osent s'aventurer dans la Jardin Noir, 
+                                    et encore moins arrivent à ressortir en vie.
+                                </span></span>.
+                            </p>
+            
+                            <div class='planetsPanel'>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Mars_1.webp' alt='Mars - 1'>
+                                </div>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Mars_2.webp' alt='Mars - 2'>
+                                </div>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Mars_3.webp' alt='Mars - 3'>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class='modal-footer'>
+                            <button type='button' data-bs-dismiss='modal'>Fermer</button>
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    Depuis la Chute, une grande partie de Mars est retournée à la désolation avant l'arrivée du Voyageur. Comme le reste
-                    des planètes du système solaire, Mars est recouverte de ruines datant de l'Age d'Or. C'est le foyer de Raspoutine,
-                    l'Esprit Tutélaire, une intelligence artificielle programmée pour défendre l'humanité des menaces extérieures.
-                    <br/><br/>
-                    Avec l'arrivée du Voyageur, la pluie s'est abattue sur Mars, et c'est ici que l'humanité a fait sa première rencontre avec
-                    l'entité sphérique. Une fois la terraformation de Mars complétée, une métropole prospère appelée <strong>Eleuthéria</strong>
-                    est venue dominer l'horizon - un bastion de la vie humaine sur Mars.
-                    <br/><br/>
-                    L'entreprise <strong>Clovis Bray</strong> a eu une forte présence à Eleuthéria, et a commencé à installer ses propres
-                    installations privées, dont une dans le Bassin d'Hellas, qui agissait comme une attraction pour touristes et un site de
-                    recherches sur la technologie des Esprits Tutélaires. Cette installation contient aussi le coeur de l'Esprit Tutélaire
-                    Raspoutine.
-                    <br/><br/>
-                    Mars est sujette  aux incursions de plusieurs factions ennemies, qui sont les Cabals, les
-                    <span class="tooltip-box">Vex<span class="tooltip-popup">
-                        <img src="../assets/Tooltip/Vex.webp">
-                        Les Vex sont une espèce composée d'entités biomécaniques capables de voyager dans le temps. Ils sont arrivés dans
-                        notre système solaire par des portails temporels. Nous ignorons cependant s'ils viennent du passé ou du futur, et nous
-                        ignorons également leur véritable objectif.
-                        <br/>
-                        <a class="button-blue" href="../Enemies/Vex/">Ennemis: les Vex</a>
-                    </span></span>
-                    et la Ruche. Les deux premiers se retrouveront
-                    opposés dans une guerre d'usure dans la Baie du Méridien, une région entourant Eleuthéria; les Cabals se disputant
-                    l'exploitation des ressources et l'étude des artéfacts et structures Vex de la région, dont l'énorme portail d'accès au
-                    <span class="tooltip-box">Jardin Noir<span class="tooltip-popup">
-                        <img src="../assets/Tooltip/BlackGarden.webp">
-                        Le Jardin Noir est un royaume de Ténèbres, isolé hors du temps et de l'espace. 
-                        On raconte que cet endroit serait le lieu de naissance des Vex. Nous ne savons quasiment rien à propos du Jardin Noir,
-                        mais il semble bien gardé par les Sol Reclus. Peu de Gardiens osent s'aventurer dans la Jardin Noir, 
-                        et encore moins arrivent à ressortir en vie.
-                    </span></span>.
-                </p>
-
-                <div style="width: 70%; border-bottom: 1px solid rgb(165, 164, 164); margin: 25px"></div>
-                <div class="planets-description">
-                    <div class="planet-picture">
-                        <img src="Pictures/Mars_1.webp" alt="Mars - 1">
-                    </div>
-                    <div class="planet-picture">
-                        <img src="Pictures/Mars_2.webp" alt="Mars - 2">
-                    </div>
-                    <div class="planet-picture">
-                        <img src="Pictures/Mars_3.webp" alt="Mars - 3">
-                    </div>
-                </div>
-                <div style="width: 70%; border-bottom: 1px solid rgb(165, 164, 164); margin: 25px"></div>
             </div>
 
-            <div class="medium-separator"></div>
+            <!-- VENUS PLANET SUPPORT -->
+            <div class='modal fade' id='fourthModal' tabindex='-1'>
+                <div class='modal-dialog modal-dialog-centered'>
+                    <div class='modal-content'>
+                        <div class='modal-body'>
 
-            <div class="large-container">
-                <div class="content-header">
-                    <h2>DÉPRESSION D'ISHTAR, VÉNUS</h2>
+                            <div class='contentHeader'>
+                                <h2>DÉPRESSION D'ISHTAR, VÉNUS</h2>
+                            </div>
+                            <p>
+                                Avec la venue du Voyageur, l'air toxique de Vénus a été purifié, et la planète a rapidement été colonisée par l'humanité
+                                pendant l'Age d'Or, et Vénus était considérée comme un paradis. Les déserts corrosifs et surchauffés de Vénus se sont
+                                rapidement transformés en jungles luxuriantes.
+                                <br/>
+                                Pendant l'exploration initiale de Vénus, des ruines anciennes antérieures à l'existance de l'humanité ont été découvertes,
+                                menant à une ruée vers la colonisation par certains des plus brillants esprits sur Terre.
+                                <br/><br/>
+                                Malheureusement, la jungle et la végétation ont détruit les vestiges de l'établissement de recherche scientifique
+                                autrefois occuppé par l'humanité.
+                                <br/>
+                                Au même moment, les cités oubliées sont lentement englouties par l'océan vénusien et, à leur place, l'imposante
+                                <strong>Citadelle</strong> Vex attire désormais le regard - une forteresse aux formes géométriques étranges. Son but reste
+                                inconnu, mais les Vex la défendent sans relâche.
+                                <br/>
+                                Après la Chute, les Vex ont revendiqué les ruines des colonies vénusiennes et ont commencé à les protéger pour des raisons
+                                inconnues. Ces ruines comportent des relais d'énergie utilisés par les Vex, qui sont alimentés par un <strong>Nexus</strong>
+                                fortement protégé loin sous la surface de Vénus.
+                                <br/>
+                                Ce Nexus ferait partie d'un ancien réseau qui, si entièrement réactivé, pourrait permettre aux Vex de contrôler la planète.
+                            </p>
+                            <div class='planetsPanel'>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Venus_1.webp' alt='Vénus - 1'>
+                                </div>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Venus_2.webp' alt='Vénus - 2'>
+                                </div>
+                                <div class='planetPicture'>
+                                    <img src='Pictures/Venus_3.webp' alt='Vénus - 3'>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class='modal-footer'>
+                            <button type='button' data-bs-dismiss='modal'>Fermer</button>
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    Avec la venue du Voyageur, l'air toxique de Vénus a été purifié, et la planète a rapidement été colonisée par l'humanité
-                    pendant l'Age d'Or, et Vénus était considérée comme un paradis. Les déserts corrosifs et surchauffés de Vénus se sont
-                    rapidement transformés en jungles luxuriantes.
-                    <br/>
-                    Pendant l'exploration initiale de Vénus, des ruines anciennes antérieures à l'existance de l'humanité ont été découvertes,
-                    menant à une ruée vers la colonisation par certains des plus brillants esprits sur Terre.
-                    <br/><br/>
-                    Malheureusement, la jungle et la végétation ont détruit les vestiges de l'établissement de recherche scientifique
-                    autrefois occuppé par l'humanité.
-                    <br/>
-                    Au même moment, les cités oubliées sont lentement englouties par l'océan vénusien et, à leur place, l'imposante
-                    <strong>Citadelle</strong> Vex attire désormais le regard - une forteresse aux formes géométriques étranges. Son but reste
-                    inconnu, mais les Vex la défendent sans relâche.
-                    <br/><br/>
-                    Après la Chute, les Vex ont revendiqué les ruines des colonies vénusiennes et ont commencé à les protéger pour des raisons
-                    inconnues. Ces ruines comportent des relais d'énergie utilisés par les Vex, qui sont alimentés par un <strong>Nexus</strong>
-                    fortement protégé loin sous la surface de Vénus.
-                    <br/>
-                    Ce Nexus ferait partie d'un ancien réseau qui, si entièrement réactivé, pourrait permettre aux Vex de contrôler la planète.
-                </p>
-
-                <div style="width: 70%; border-bottom: 1px solid rgb(165, 164, 164); margin: 25px"></div>
-                <div class="planets-description">
-                    <div class="planet-picture">
-                        <img src="Pictures/Venus_1.webp" alt="Vénus - 1">
-                    </div>
-                    <div class="planet-picture">
-                        <img src="Pictures/Venus_2.webp" alt="Vénus - 2">
-                    </div>
-                    <div class="planet-picture">
-                        <img src="Pictures/Venus_3.webp" alt="Vénus - 3">
-                    </div>
-                </div>
-                <div style="width: 70%; border-bottom: 1px solid rgb(165, 164, 164); margin: 25px"></div>
             </div>
         </section>
 
-        <div class="content-separator"></div>
+        <div class='contentSeparator'></div>
 
-        <section id="NewDestinations">
+        <section id='NewDestinations'>
 
         </section>
-        <div class="large-separator"></div>
+        <div class='largeSeparator'></div>
+      
     </body>
 </html>

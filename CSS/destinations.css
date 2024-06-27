@@ -1,8 +1,8 @@
 
-/* ----- SUPPORT PLANÈTES PERSONNALISÉ ----- */
+/* ----- CUSTOM PLANETS SUPPORT ----- */
 
 
-.planets-holder
+.planetsHolder
 {
 	display: flex;
 	justify-content: center;
@@ -11,7 +11,7 @@
 	height: 375px;
 }
 
-.planets-holder .planet-content
+.planetsHolder .planetContent
 {
 	z-index: 4;
 	position: relative;
@@ -20,48 +20,79 @@
 	padding: 10px;
 }
 
-.planets-holder .planet-content img
+.planetsHolder .planetContent img
 {
 	z-index: 4;
 	width: 100%;
 	height: 100%;
 	border-radius: 5px;
 	box-shadow: 2px 5px 10px rgba(0, 0, 0, .3);
+	transition: 0.2s;
 }
 
-.planets-holder .planet-text-content 
+.planetContent img:hover
+{
+	transform: scale(1.02);
+	transition: 0.2s;
+	box-shadow: 2px 15px 10px rgba(0, 0, 0, .3);
+	cursor: pointer;
+}
+
+.planetDescription
+{
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	background: var(--layout-color);
+	width: 92%;
+	height: fit-content;
+	border-radius: 5px;
+	padding: 15px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.planetDescription.show
+{
+	display: flex;
+}
+
+.planetsHolder .planetTextContent 
 {
 	position: absolute;
 	top: 0;
 	padding: 20px 20px;
 }
 
-.planets-holder .planet-text-content h2
+.planetsHolder .planetTextContent h2
 {
 	color: rgba(245, 245, 245, .8);
-	font-family: "PassionOne";
+	font-family: 'PassionOne';
 	font-size: 35px;
 }
 
 
-/* ----- SUPPORT DESCRIPTION PLANÈTES ----- */
+/* ----- CUSTOM PLANETS DESCRIPTIONS ----- */
 
 
-.planets-description
+.planetsPanel
 {
     display: flex;
     justify-content: space-around;
     width: 95%;
     height: fit-content;
+	border-radius: 8px;
+	border: 1px solid var(--layout-color);
+	padding: 3vh;
+	box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.1);
 }
 
-.planets-description .planet-picture
+.planetsPanel .planetPicture
 {
     width: 32%;
     height: 275px;
 }
 
-.planet-picture img
+.planetPicture img
 {
     width: 100%;
     height: 100%;

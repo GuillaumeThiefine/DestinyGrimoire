@@ -1,7 +1,8 @@
 
-/* ----- TABLEAU DES FACTIONS ALLIÉES DE LA TOUR ----- */
+/* ----- ALLIED FACTIONS OF THE TOWER ----- */
 
-.faction-holder
+
+.factionsHolder
 {
 	width: 1770px;
 	height: 160px;
@@ -13,7 +14,7 @@
 	z-index: 110;
 }
 
-.button-factions
+.factionsButton
 {
 	width: 275px;
 	height: 135px;
@@ -28,20 +29,20 @@
 	transition: 0.35s;
 }
 
-.button-factions:hover
+.factionsButton:hover
 {
 	transform: translateY(-15px);
 	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 }
 
-.button-factions img
+.factionsButton img
 {
 	filter: invert(75%);
 	transition: 0.35s;
 	z-index: 8;
 }
 
-.button-factions:hover img
+.factionsButton:hover img
 {
 	filter: invert(0%);
 	transition: 0.35s;
@@ -65,7 +66,7 @@
 	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
 }
 
-.gunsmith .gunsmith-bar
+.gunsmith .gunsmithBar
 {
 	z-index: 4;
 	display: none;
@@ -77,7 +78,7 @@
 	transform: skewY(-20deg);
 }
 
-.gunsmith:hover .gunsmith-bar
+.gunsmith:hover .gunsmithBar
 {
 	z-index: 4;
 	display: flex;
@@ -139,7 +140,7 @@
 	box-shadow: 4px 8px 15px rgba(0, 0, 0, .6);
 }
 
-.gunsmith.active .gunsmith-bar
+.gunsmith.active .gunsmithBar
 {
 	display: flex;
 	background: #e4d03b;
@@ -189,7 +190,7 @@
 
 
 
-.faction-story-holder
+.factionStoryHolder
 {
 	position: relative;
 	width: 1770px;
@@ -204,7 +205,7 @@
 	z-index: 110;
 }
 
-.story-van, .story-cru, .story-gun, .story-mon, .story-orb, .story-cul
+.vanStory, .cruStory, .gunStory, .monStory, .orbStory, .culStory
 {
 	position: absolute;
 	bottom: -602px;
@@ -216,48 +217,48 @@
 	align-items: center;
 }
 
-.story-van.active, .story-cru.active, .story-gun.active,
-.story-mon.active, .story-orb.active, .story-cul.active
+.vanStory.active, .cruStory.active, .gunStory.active,
+.monStory.active, .orbStory.active, .culStory.active
 {
 	bottom: 37.5px;
 	transition: ease-out 0.5s;
 }
 
-.story-van h4, .story-cru h4, .story-gun h4, .story-mon h4, .story-orb h4, .story-cul h4
+.vanStory h4, .cruStory h4, .gunStory h4, .monStory h4, .orbStory h4, .culStory h4
 {
-	font-family: "BebasNeue";
+	font-family: 'BebasNeue';
 	color: #b7aa9d;
 	font-size: 27px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
-.story-van .quote, .story-cru .quote, .story-gun .quote, .story-mon .quote, .story-orb .quote, .story-cul .quote
+.vanStory .quote, .curStory .quote, .gunStory .quote, .monStory .quote, .orbStory .quote, .culStory .quote
 {
 	width: 70%;
 }
 
-.story-van p, .story-cru p, .story-gun p, .story-mon p, .story-orb p, .story-cul p
+.vanStory p, .cruStory p, .gunStory p, .monStory p, .orbStory p, .culStory p
 {
 	width: 85%;
 	font-size: large;
 }
 
-.story-van a, .story-cru a, .story-gun a, .story-mon a, .story-orb a, .story-cul a
+.vanStory a, .cruStory a, .gunStory a, .monStory a, .orbStory a, .culStory a
 {
 	padding-left: 50px;
 	padding-right: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	font-family: "BebasNeue";
+	font-family: 'BebasNeue';
 	font-size: 20px;
 }
 
 
-/* ----- FACTIONS ENNEMIES ----- */
+/* ----- ENEMY FACTIONS ----- */
 
 
-.enemy-factions-holder
+.enemyFactionsHolder
 {
 	display: flex;
 	width: 75%;
@@ -272,12 +273,12 @@
 	border-radius: 8px;
 }
 
-.warning-accordion-content .enemy-factions-holder
+.warningAccordionContent .enemyFactionsHolder
 {
 	width: 90%;
 }
 
-.enemy-image
+.enemyImage
 {
 	display: flex;
 	align-items: center;
@@ -287,13 +288,13 @@
 	border-left: 1px solid lightgray;
 }
 
-.enemy-image img
+.enemyImage img
 {
 	width: 100%;
 	height: 100%;
 }
 
-.enemy-text
+.enemyText
 {
 	display: flex;
 	flex-direction: column;
@@ -303,20 +304,71 @@
 	z-index: 2;
 }
 
-
-
-.enemy-text p
+.enemyText p
 {
 	width: 95%;
 	max-width: 100%;
-	font-family: "PT Sans Narrow";
+	font-family: 'PT Sans Narrow';
 	font-size: larger;
 	color: #353330;
 }
 
-.enemy-text h4
+.enemyText h4
 {
 	font-size: 45px;
-	font-family: "PassionOne";
+	font-family: 'PassionOne';
 	color: var(--color-secondary);
+}
+
+.enemiesPlaceholder
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: fit-content;
+}
+
+.enemyCard
+{
+	display: flex;
+	align-items: center;
+	width: 15vw;
+	height: 15vw;
+	border-radius: 4%;
+	margin: 2%;
+	background: var(--white-color);
+	box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+	transition: 0.3s;
+}
+
+.enemyCard:hover
+{
+	transform: scale(1.03);
+	transition: 0.3s;
+}
+
+.enemyCard img
+{
+	width: 50%;
+	height: 50%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.enemyCard a
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.enemyCard a p
+{
+	color: black;
+	font-family: 'PassionOne';
+	font-size: 2rem;
 }

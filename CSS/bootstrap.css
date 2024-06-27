@@ -31,3 +31,34 @@
     cursor: pointer;
     transition: 0.4s;
 }
+
+.modal-dialog
+{
+    width: 90%;
+    max-width: 90%;
+    height: fit-content;
+}
+
+.modal-body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-footer button
+{
+    font-family: 'PT Sans Narrow';
+	font-size: larger;
+	padding-left: 4.5rem;
+	padding-right: 4.5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	color: var(--layout-color);
+	background: var(--color-secondary);
+	border-radius: 4px;
+    border: none;
+	text-decoration: none;
+	transition: 0.5s;
+}

@@ -23,8 +23,8 @@ let availableKeywords = [
     'La Forme Finale',
 ];
 
-const inputBox = document.getElementById('search-box');
-const resultsBox = document.querySelector('.result-box');
+const inputBox = document.getElementById('searchBox');
+const resultsBox = document.querySelector('.resultBox');
 
 inputBox.onkeyup = function() {
     let result = [];
@@ -40,21 +40,21 @@ inputBox.onkeyup = function() {
 
 function display(result) {
     const content = result.map((list) => {
-        var pageLink = "<a href='" + generateLinks(list) + "'>" + list + "</a>";
-        return "<li>" + pageLink + "</li>";
+        var pageLink = "<a href='" + generateLinks(list) + "'>" + list + '</a>';
+        return '<li>' + pageLink + '</li>';
     });
 
     if (result.length) {
-        resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+        resultsBox.innerHTML = '<ul>' + content.join('') + '</ul>';
     } else {
-        resultsBox.innerHTML = "";
+        resultsBox.innerHTML = '';
     }
 }
 
 function generateLinks(item) {
-    const siteUrl = 'https://guillaumethiefine.github.io/DestinyGrimoire/';
+    const siteUrl = 'https://guillaumethiefine.github.io/DestinyGrimoire';
     const links = {
-        /* Récupère les liens pour les pages Web des factions ennemies */
+        /* Get links for enemy factions web pages */
         'Vex': `${siteUrl}/Enemies/Vex/`,
         'Diables Symbiotiques': `${siteUrl}/Enemies/DevilSplicer/`,
         'Déchus': `${siteUrl}/Enemies/Fallen/`,
@@ -62,7 +62,7 @@ function generateLinks(item) {
         'Cabals': `${siteUrl}/Enemies/Cabal/`,
         'Ruche': `${siteUrl}/Enemies/Hive/`,
 
-        /* Récupère les liens pour les pages Web des extensions */
+        /* Get links for expansions web pages */
         'Les Ténèbres Souterraines': `${siteUrl}/Expansions/DarkBelow/`,
         'La Maison des Loups': `${siteUrl}/Expansions/HouseWolves/`,
         'Le Roi des Corrompus': `${siteUrl}/Expansions/TakenKing/`,

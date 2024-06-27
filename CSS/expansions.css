@@ -1,8 +1,8 @@
 
-/* ----- INTRODUCTION DE CAMPAGNE ----- */
+/* ----- CAMPAIGN INTRO ----- */
 
 
-.extention-intro
+.expansionIntro
 {
 	display: flex;
 	justify-content: space-around;
@@ -10,14 +10,14 @@
 	height: fit-content;
 }
 
-.extention-intro .picture-placeholder
+.expansionIntro .picturePlaceholder
 {
 	width: 30%;
 	display: flex;
 	justify-content: flex-start;
 }
 
-.picture-placeholder .intro-picture
+.picturePlaceholder .introPicture
 {
 	position: relative;
 	width: 100%;
@@ -26,14 +26,14 @@
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.intro-picture img
+.introPicture img
 {
 	border-radius: 5px;
 	width: 100%;
 	height: 100%;
 }
 
-.picture-placeholder .intro-title
+.picturePlaceholder .introTitle
 {
 	position: absolute;
 	font-family: 'PassionOne';
@@ -42,7 +42,7 @@
 	margin-left: 5px;
 }
 
-.intro-text
+.introText
 {
 	display: flex;
 	justify-content: center;
@@ -56,13 +56,13 @@
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.intro-text p
+.introText p
 {
 	margin: 8px;
 }
 
 
-/* ----- IMAGES DE CAMPAGNE ----- */
+/* ----- CAMPAIGN PICTURES ----- */
 
 
 .campaignPicture
@@ -81,10 +81,10 @@
 }
 
 
-/* ----- SUPPORT RAID ----- */
+/* ----- RAID SUPPORT ----- */
 
 
-.raid-holder
+.raidHolder
 {
     display: flex;
     justify-content: center;
@@ -99,7 +99,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.raid-description
+.raidDescription
 {
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@
 	height: fit-content;
 }
 
-.raid-description h4
+.raidDescription h4
 {
     font-size: 25px;
     font-family: 'PT Sans Narrow Bold';
@@ -117,7 +117,7 @@
     margin: 8px;
 }
 
-.raid-picture-box
+.raidPictureBox
 {
 	position: relative;
 	width: 65%;
@@ -128,7 +128,7 @@
 	align-items: center;
 }
 
-.raid-picture-box .raid-text-box
+.raidPictureBox .raidTextBox
 {
 	position: absolute;
 	top: 0;
@@ -146,13 +146,13 @@
 	padding-bottom: 10%;
 }
 
-.raid-picture-box:hover .raid-text-box
+.raidPictureBox:hover .raidTextBox
 {
 	left: 0;
 	padding-bottom: 10%;
 }
 
-.raid-text-box h1
+.raidTextBox h1
 {
 	width: 100%;
 	display: flex;
@@ -162,7 +162,7 @@
 	padding-top: 15%;
 }
 
-.raid-text-box p
+.raidTextBox p
 {
 	width: 90%;
 	display: flex;
@@ -172,17 +172,17 @@
 }
 
 
-/* ----- IMAGES DE CAMPAGNE ----- */
+/* ----- SIDE QUESTS ----- */
 
 
-.side-quests
+.sideQuests
 {
     display: flex;
     justify-content: space-around;
     width: 95%;
 }
 
-.quest-content
+.questContent
 {
     display: flex;
     flex-direction: column;
@@ -197,7 +197,7 @@
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.quest-content h2
+.questContent h2
 {
     font-size: 28px;
     font-family: 'PT Sans Narrow Bold';

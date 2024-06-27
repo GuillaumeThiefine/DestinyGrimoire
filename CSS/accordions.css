@@ -1,8 +1,8 @@
 
-/* ----- ACCORDÉON - AVERTISSEMENT ----- */
+/* ----- ACCORDION - WARNING ----- */
 
 
-.warning-accordion
+.warningAccordion
 {
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     max-width: 100%;
 }
 
-.warning-accordion-item
+.warningAccordionItem
 {
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
     width: 100%;
 }
 
-.warning-accordion-header
+.warningAccordionHeader
 {
     display: flex;
     flex-direction: column;
@@ -33,13 +33,13 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.warning-accordion-header p
+.warningAccordionHeader p
 {
     font-family: 'PT Sans Narrow';
     font-size: larger;
 }
 
-.warning-accordion-content
+.warningAccordionContent
 {
     display: flex;
     flex-direction: column;
@@ -51,14 +51,14 @@
     transition: cubic-bezier(0, 1.27, 1, 1.02) 0.5s;
 }
 
-.warning-accordion-content p
+.warningAccordionContent p
 {
     transition: ease-in-out 0.5s;
     opacity: 0;
     margin: 0;
 }
 
-.warning-accordion-content.active
+.warningAccordionContent.active
 {
     padding: 20px;
     padding-top: 48px;
@@ -73,7 +73,7 @@
     transition: cubic-bezier(0, 1.27, 1, 1.02) 0.5s;
 }
 
-.warning-accordion-content.active p
+.warningAccordionContent.active p
 {
     transition: ease-in-out 0.5s 0.5s;
     opacity: 1;

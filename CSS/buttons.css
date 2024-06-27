@@ -1,10 +1,10 @@
 
-/* ----- BOUTONS PERSONNALISÉS ----- */
+/* ----- CUSTOM BUTTONS ----- */
 
 
-.button-blue
+.primaryButton
 {
-	font-family: "PT Sans Narrow";
+	font-family: 'PT Sans Narrow';
 	font-size: large;
 	padding-left: 0.75rem;
 	padding-right: 0.75rem;
@@ -14,20 +14,20 @@
 	background: var(--color-secondary);
 	border-radius: 4px;
 	text-decoration: none;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
-.button-blue:hover
+.primaryButton:hover
 {
 	text-decoration: none;
-	transition: 0.5s;
+	transition: 0.3s;
 	box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
 	transform: scale(1.05);
 }
 
-.button-white
+.secondaryButton
 {
-	font-family: "PT Sans Narrow";
+	font-family: 'PT Sans Narrow';
 	font-size: large;
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -37,10 +37,10 @@
 	background: var(--white-color);
 	border-radius: 5px;
 	text-decoration: none;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
-.campaign-button
+.campaignButton
 {
 	display: flex;
 	justify-content: center;
@@ -53,13 +53,13 @@
 	color: var(--layout-color);
 	background: var(--color-secondary);
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
-.campaign-button:hover
+.campaignButton:hover
 {
 	text-decoration: none;
-	transition: 0.5s;
+	transition: 0.3s;
 	box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
 	transform: scale(1.05);
 }

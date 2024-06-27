@@ -1,11 +1,11 @@
 
-/* ----- MISE EN PAGE ----- */
+/* ----- LAYOUT ----- */
 
 
 .destination
 {
 	width: 920px;
-	font-family: "PT Sans Narrow";
+	font-family: 'PT Sans Narrow';
 	text-align: center;
 	margin: auto;
 	color: var(--layout-color);
@@ -13,7 +13,7 @@
 }
 
 
-.campaign-heading
+.campaignHeading
 {
 	display: flex;
 	justify-content: center;
@@ -22,9 +22,9 @@
 	margin-bottom: 25px;
 }
 
-.campaign-heading h2
+.campaignHeading h2
 {
-	font-family: "BebasNeue";
+	font-family: 'BebasNeue';
 	font-size: 30px;
 	color: var(--color-primary);
 }
@@ -32,21 +32,21 @@
 .quote
 {
 	width: 90%;
-	font-family: "PT Sans Narrow";
+	font-family: 'PT Sans Narrow';
 	color: #8A7F80;
 	text-align: center;
 	font-style: italic;
 	max-width: 100%;
 }
 
-.border-bottom
+.borderBottom
 {
-	font-family: "PT Sans Narrow Bold";
+	font-family: 'PT Sans Narrow Bold';
 	font-size: 35px;
 	border-bottom: 1px solid var(--color-primary);
 }
 
-.content-header
+.contentHeader
 {
 	display: flex;
 	width: fit-content;
@@ -56,21 +56,21 @@
 	align-items: center;
 }
 
-.content-header h2
+.contentHeader h2
 {
 	font-size: 50px;
-	font-family: "PassionOne";
+	font-family: 'PassionOne';
 }
 
 .planet
 {
-	font-family: "BebasNeue";
+	font-family: 'BebasNeue';
 	text-align: center;
 	color: var(--color-primary);
 
 }
 
-.content-intro img
+.contentIntro img
 {
 	width: 415px;
 	height: 230px;
@@ -79,10 +79,10 @@
 }
 
 
-/* ----- CONTENEURS ----- */
+/* ----- CONTAINERS ----- */
 
 
-.medium-container
+.mediumContainer
 {
 	width: 85%;
 	max-width: 100%;
@@ -97,7 +97,7 @@
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.large-container
+.largeContainer
 {
 	display: flex;
 	flex-direction: column;
@@ -110,7 +110,7 @@
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.announcement-container
+.announcementContainer
 {
 	display: flex;
 	justify-content: center;
@@ -124,7 +124,7 @@
 	margin: 30px;
 }
 
-.announcement-container p
+.announcementContainer p
 {
 	font-size: 30px;
 	font-family: 'PassionOne';
@@ -132,36 +132,36 @@
 	margin: 0;
 }
 
-.announcement-container a
+.announcementContainer a
 {
 	color: var(--links-color);
 }
 
 
-/* ----- SÉPARATEURS ----- */
+/* ----- SEPARATORS ----- */
 
 
-.extra-separator
+.extraSeparator
 {
 	height: 200px;
 }
 
-.large-separator
+.largeSeparator
 {
 	height: 120px;
 }
 
-.medium-separator
+.mediumSeparator
 {
 	height: 65px;
 }
 
-.small-separator
+.smallSeparator
 {
 	height: 25px;
 }
 
-.content-separator 
+.contentSeparator 
 {
 	display: flex;
 	flex-direction: column;

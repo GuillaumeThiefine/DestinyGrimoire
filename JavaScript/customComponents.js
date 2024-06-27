@@ -1,5 +1,5 @@
 
-// ----- MODAL PERSONNALISE ----- 
+// ----- CUSTOM MODAL ----- 
 
 
 const open = document.getElementById('openModal');
@@ -17,14 +17,14 @@ if (open != null && close != null) {
 };
 
 
-// ----- ACCORDÉON - AVERTISSEMENT -----
+// ----- ACCORDION - WARNING -----
 
 
-var accordionItems = document.querySelectorAll('.warning-accordion');
+var accordionItems = document.querySelectorAll('.warningAccordion');
 
 accordionItems.forEach((item) => {
     const header = item.querySelector('.alert-danger');
-    const content = item.querySelector('.warning-accordion-content');
+    const content = item.querySelector('.warningAccordionContent');
 
     header.addEventListener('click', () => {
         content.classList.toggle('active');
